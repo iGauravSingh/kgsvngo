@@ -1,6 +1,5 @@
 
-import { FaCalendarAlt } from "react-icons/fa";
-import { FaRegClock } from "react-icons/fa";
+
 import { FaLocationDot } from "react-icons/fa6";
 
 

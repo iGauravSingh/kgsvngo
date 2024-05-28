@@ -5,10 +5,8 @@ import {
   } from "../../movies";
 
   import {
-    useScroll,
-    useTransform,
+    
     motion,
-    useMotionValueEvent,
   } from "framer-motion";
 
   export const VideoCarousel = () => {

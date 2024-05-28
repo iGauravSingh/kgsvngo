@@ -7,7 +7,7 @@ import Support from "./components/Support";
 import Tagline from "./components/Tagline";
 import Zig from "./components/Zig";
 import Hero from "./components/section/Hero";
-import Usps from "./components/section/Usps";
+
 import { VideoCarousel } from "./components/section/Video-carousel";
 
 
