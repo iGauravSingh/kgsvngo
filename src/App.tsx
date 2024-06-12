@@ -8,7 +8,6 @@ import Support from "./components/Support";
 import Tagline from "./components/Tagline";
 import Zig from "./components/Zig";
 import Hero from "./components/section/Hero";
-import TestImageText from "./components/TestImageText";
 
 import { VideoCarousel } from "./components/section/Video-carousel";
 

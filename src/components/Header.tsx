@@ -1,6 +1,6 @@
-import Button from "./Button";
+
 import Container from "./Container";
-import logo from "../assets/logo.jpg";
+
 import { IoMdMenu } from "react-icons/io";
 
 const Header = () => {

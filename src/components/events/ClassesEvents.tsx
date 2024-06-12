@@ -1,4 +1,4 @@
-import { FaSchool } from "react-icons/fa6";
+
 import { FaLocationDot } from "react-icons/fa6";
 import { FaChalkboardTeacher } from "react-icons/fa";
 
