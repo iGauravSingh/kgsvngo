@@ -13,8 +13,11 @@ export const VideoCarousel = () => {
         transition={{ duration: 0.4 }}
         className="-mt-[calc((100vh-(300px*(16/9)))/2)] space-y-3 pt-4 md:-mt-[calc((100vh-(60vw*(9/16)))/2)]"
       >
-        <SmallVideoCarousel movies={randomMoviesSet1} />
-        <div className="[--carousel-offset:-32px] [--duration:50s]">
+        <div className="[--carousel-offset:-32px] [--duration:120s]">
+          <SmallVideoCarousel movies={randomMoviesSet1} />
+        </div>
+        
+        <div className="[--carousel-offset:-32px] [--duration:90s]">
           <SmallVideoCarousel movies={randomMoviesSet2} />
         </div>
       </motion.div>

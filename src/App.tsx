@@ -17,7 +17,7 @@ function App() {
   return (
     <>
       <Header />
-      <main>
+      <main className=" custom-gradient">
         <div className="z-10">
           <Hero />
           
@@ -29,7 +29,7 @@ function App() {
         <Support />
         <Achivers />
         <Footer />
-        <TestImageText />
+        {/* <TestImageText /> */}
       </main>
     </>
   );

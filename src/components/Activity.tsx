@@ -5,10 +5,10 @@ import UpcomingEvents from "./events/UpcomingEvents";
 
 
 const classesData = [
-    {id: 1, desc: "CMC - Mayur Dhaba, Punnapur", address: "Tehsil Sidhauli, Distt Sitapur-261303"},
-    {id: 2, desc: "CMC - Govt Primary School, Gram Asal", address: "Tehsil Sidhauli, District Sitapur- 261303"},
-    {id: 3, desc: "PSK - KGSV Centre of Learning , Punnapur", address: "Tehsil Sidhauli , District Sitapur-261303"},
-    {id: 4, desc: "SVKBPK , Gram Kakrighat", address: " District Almora - 263678 , Uttarakhand "},
+    {id: 1, desc: "CMC - Mayur Dhaba, Punnapur",mentor: 'Rishi Kumar Gupta', address: "Tehsil Sidhauli, Distt Sitapur-261303"},
+    {id: 2, desc: "CMC - Govt Primary School, Gram Asal",mentor: 'Rishi Kumar Gupta', address: "Tehsil Sidhauli, District Sitapur- 261303"},
+    {id: 3, desc: "PSK - KGSV Centre of Learning , Punnapur",mentor: 'Shalini Vishwakarma', address: "Tehsil Sidhauli , District Sitapur-261303"},
+    {id: 4, desc: "SVKBPK , Gram Kakrighat",mentor: 'Tanuja Bisht', address: " District Almora - 263678 , Uttarakhand "},
 ]
 
 const upcomingEvents = [
@@ -23,12 +23,14 @@ const visitCordinator = [
 
 const Activity = () => {
   return (
-    <Container>
-      <div className=" font-popins mb-10">
+    <div className=" pt-11 pb-10">
+      <Container> 
+      <div className=" font-popins pt-7 mb-10">
       {/* heading  */}
       <div className=" flex flex-col items-center">
-        <h2 className=" text-2xl font-bold">Wish to know More -- See KGSV Onsite for Yourself</h2>
-        <p className="">Gifts of any kind during visits are discouraged</p>
+        <h2 className=" text-4xl text-ngodark font-bold text-wrap">Wish to know more</h2>
+          <p className=" text-ngodark text-lg">Visit KGSV Onsit ( Please coordinate with respective Mentors for site visit )</p>
+        <p className=" text-greenngo">Gifts of any kind during visits are discouraged</p>
         
       </div>
 
@@ -36,22 +38,26 @@ const Activity = () => {
 
       {/* Classes for children */}
       <div className=" mt-4 ">
-      <h3 className=" text-xl font-bold">Ongoing Activitys</h3>
-        <h4 className=" text-lg font-semibold mb-2 mt-2">Classes for Children </h4>
+      <h3 className=" text-xl text-greenngo text-center font-bold">Ongoing Activitys</h3>
+        <h4 className=" text-lg text-ngodark font-semibold mb-2 mt-2">Classes for Children </h4>
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {classesData.map((item) => (
-            <div key={item.id}><ClassesEvents id={item.id} desc={item.desc} address={item.address} /></div>
+            <div key={item.id} className=""><ClassesEvents id={item.id} desc={item.desc} address={item.address} mentor={item.mentor} /></div>
         ))}
+        </div>
       </div>
 
       {/* upcoming Events  */}
       <div className=" mt-5">
         <h3 className=" text-xl font-bold mb-2">Upcoming Events</h3>
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-2">
         {upcomingEvents.map((item)=> (
             <div key={item.id} className="">
                 <UpcomingEvents id={item.id} day={item.day} month={item.month} year={item.year} desc={item.desc} address={item.address} />
                 
             </div>
         ))}
+        </div>
         
       </div>
 
@@ -67,6 +73,7 @@ const Activity = () => {
 
     </div>
     </Container>
+    </div>
   );
 };
 

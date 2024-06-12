@@ -1,13 +1,13 @@
 // Sample data
 const topScorers = [
-    { name: 'Komal', percentage: '76%', img: 'path/to/komal.jpg' },
-    { name: 'Manshi', percentage: '88%', img: 'path/to/manshi.jpg' },
-    { name: 'Ria Gupta', percentage: '76%', img: 'path/to/ria.jpg' },
+    { name: 'Komal', percentage: '76%', img: '/toppers/komal.jpg' },
+    { name: 'Manshi', percentage: '88%', img: 'toppers/manshi.webp' },
+    { name: 'Ria Gupta', percentage: '76%', img: 'toppers/ria.jpg' },
   ];
   
   const mentor = {
     name: 'Rishi K Gupta - Associate Mentor',
-    img: 'path/to/rishi.jpg',
+    img: '/toppers/rishi.jpeg',
   };
   
   const Notification = () => (
@@ -24,11 +24,11 @@ const topScorers = [
   
   const TopScorerCard = ({ name, percentage, img }: TopScoreCardProps) => (
     <div className="w-full sm:w-1/2 lg:w-1/3 p-2">
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+      <div className=" bg-greenngo shadow-lg rounded-lg overflow-hidden">
         <img src={img} alt={name} className="w-full h-48 object-cover"/>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-bold">{name}</h3>
-          <p className="text-gray-600">{percentage}</p>
+          <h3 className="text-lg text-white font-bold">{name}</h3>
+          <p className="text-gray-600 text-white">{percentage}</p>
         </div>
       </div>
     </div>
@@ -40,11 +40,11 @@ const topScorers = [
   }
   
   const MentorCard = ({ name, img }: MentorCardProps) => (
-    <div className="w-full p-2">
-      <div className="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div className="w-[303px] h-[270px] p-2">
+      <div className=" bg-greenngo shadow-lg rounded-lg overflow-hidden">
         <img src={img} alt={name} className="w-full h-48 object-cover"/>
         <div className="p-4 text-center">
-          <h3 className="text-lg font-bold">{name}</h3>
+          <h3 className="text-lg text-white font-bold">{name}</h3>
         </div>
       </div>
     </div>
@@ -52,9 +52,10 @@ const topScorers = [
   
   const Achivers = () => {
     return (
+      <div className="">
       <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6">
-          KGSV Congratulates its Stars - Manshi, Komal & Ria & their Mentor Rishi for the outstanding UP High School-2024, Results.
+        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 text-greenngo">
+        KGSV congratulates its Stars for outstanding UP High School Board Examination - 2024 Results
         </h1>
         
         
@@ -65,12 +66,13 @@ const topScorers = [
           ))}
         </div>
   
-        <div className="mt-6">
+        <div className="mt-6 w-full flex justify-center mb-4">
           <MentorCard name={mentor.name} img={mentor.img} />
         </div>
 
         <Notification />
 
+      </div>
       </div>
     );
   };

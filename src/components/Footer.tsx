@@ -6,10 +6,10 @@ const Footer = () => {
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/3 px-4">
               <h2 className="text-lg font-bold mb-4">Contact Us</h2>
-              <p className="mb-2">1234 Street Name</p>
-              <p className="mb-2">City, State, 56789</p>
-              <p className="mb-2">Email: contact@example.com</p>
-              <p>Phone: (123) 456-7890</p>
+              <p className="mb-2">Khushhal Gram Samaj Vikas Foundation</p>
+              <p className="mb-2">CIN: – U74994UP2019NPL113235</p>
+              <p className="mb-2">Email: admin@kgsv.in</p>
+              <p>Phone: +91-7838828225</p>
             </div>
             <div className="w-full md:w-1/3 px-4 mt-8 md:mt-0">
               <h2 className="text-lg font-bold mb-4">Quick Links</h2>

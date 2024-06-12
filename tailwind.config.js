@@ -16,7 +16,8 @@ export default {
       yellowngo: "#F3CA52",
       greenngo: "#254d42",
       greendarknago: "#F3CA52",
-      greensyn: '#254d42'
+      greensyn: '#254d42',
+      ngodark: '#222627',
     },
     fontFamily: {
       sans: [
@@ -28,6 +29,10 @@ export default {
       popins: [
         "Poppins",
         "sans-serif"
+      ],
+      Sacramento: [
+        "Sacramento", 
+        "cursive",
       ]
     },
     fontSize: {
@@ -50,7 +55,11 @@ export default {
     animation: {
       "carousel-move": "carousel-move var(--duration,80s) infinite"
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'associtae': "url('/posters/bgbg.jpg')"
+      }
+    },
   },
   plugins: [],
 }

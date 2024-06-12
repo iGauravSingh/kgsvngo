@@ -93,9 +93,9 @@ const Hero = () => {
           style={{ backgroundImage: `url(${img.image})` }}
         >
           {/* Add text caption here */}
-          <div className=" z-10 flex flex-col justify-center items-center h-full px-11">
-            <div className=" relative w-screen h-[70px]">
-            <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-navcolor opacity-60 text-white text-5xl rounded px-8 py-9">
+          <div className=" z-10 flex flex-col items-center mt-14 h-full px-11">
+            <div className=" relative">
+            <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-navcolor opacity-60 text-white bg-background text-nowrap text-5xl rounded px-8 py-9">
             {img.heading}
       </h2>
               

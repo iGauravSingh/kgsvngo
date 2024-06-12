@@ -19,11 +19,11 @@ const UpcomingEvents = ({
   address,
 }: ClassEventProps) => {
   return (
-    <div className=" flex gap-10 items-center my-4 ring-2 ring-yellowngo rounded-2xl px-11 py-11">
+    <div className=" w-[450px] flex gap-10 px-4 py-2 items-center justify-between ring-2 ring-greenngo rounded-2xl">
       {/* Image on left  */}
-      <div>
+      <div className=" w-[30%]">
         <img
-          className=" w-[10rem] rounded-2xl"
+          className=" rounded-2xl object-cover"
           src="/img/ten.jpg"
           alt="event"
         />
@@ -31,14 +31,14 @@ const UpcomingEvents = ({
 
       {/* Event Card  */}
 
-      <div className=" flex flex-col gap-1">
+      <div className=" w-[70%] flex flex-col gap-1">
         <div className=" flex gap-2 items-center">
-          <FaCalendarAlt size={15} />{" "}
-          <p>
+          <FaCalendarAlt size={15} color="#254d42" />
+          <p className=" text-greenngo">
             {day} , {month} - {year}
           </p>
         </div>
-        <p className=" text-xl font-bold">{desc}</p>
+        <p className=" text-xl text-greenngo font-bold text-wrap">{desc}</p>
         <div className=" flex gap-2">
           <FaLocationDot size={15} color="#7ABA78" />
           <p className=" text-sm">{address}</p>
