@@ -14,9 +14,9 @@ import { VideoCarousel } from "./components/section/Video-carousel";
 
 function App() {
   return (
-    <>
+    <div className="">
       <Header />
-      <main className=" custom-gradient">
+      <main className="">
         <div className="z-10">
           <Hero />
           
@@ -29,8 +29,9 @@ function App() {
         <Achivers />
         <Footer />
         {/* <TestImageText /> */}
+        {/* <Glassmorphism /> */}
       </main>
-    </>
+    </div>
   );
 }
 

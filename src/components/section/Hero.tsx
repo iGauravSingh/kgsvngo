@@ -1,8 +1,6 @@
-
 import { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
-
 
 const slide1 = "/posters/mustard.jpg";
 const slide2 = "/posters/bagan.jpg";
@@ -11,19 +9,19 @@ const slide3 = "/posters/mustard.jpg";
 const images = [
   {
     id: 1,
-    heading: "वसुधैव कुटुम्बकम्",
-    Decsription: "the world is a family",
+    heading: "वसुधैव कुटुम्बकम् - विश्व एक परिवार है",
+    Decsription: "the world is one family",
     image: slide1,
   },
   {
     id: 2,
-    heading: "The world is a family",
+    heading: "The world is one family",
     Decsription: "",
     image: slide2,
   },
   {
     id: 3,
-    heading: "वसुधैव कुटुम्बकम्",
+    heading: "वसुधैव कुटुम्बकम् - विश्व एक परिवार है",
     Decsription: "",
     image: slide3,
   },
@@ -31,7 +29,6 @@ const images = [
 
 const Hero = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -43,10 +40,9 @@ const Hero = () => {
   }, [currentImageIndex]);
 
   const handleLeftClick = () => {
-    if(currentImageIndex > 1) {
+    if (currentImageIndex > 1) {
       setCurrentImageIndex((prevIndex) => (prevIndex - 1) % images.length);
     }
-    
   };
 
   const handleRightClick = () => {
@@ -80,36 +76,38 @@ const Hero = () => {
   };
 
   return (
-    <div className=" w-screen relative overflow-clip ">
-      
+    <div className=" w-screen relative overflow-clip bg-white ">
       <div className="relative w-screen h-screen overflow-hidden">
         <div className=" w-full flex justify-center items-center">
-        {images.map((img, index) => (
-          <div
-          key={img.id}
-          className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 ${
-            index === currentImageIndex ? "translate-x-0" : "translate-x-full"
-          }`}
-          style={{ backgroundImage: `url(${img.image})` }}
-        >
-          {/* Add text caption here */}
-          <div className=" z-10 flex flex-col items-center mt-14 h-full px-11">
-            <div className=" relative">
-            <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-navcolor opacity-60 text-white bg-background text-nowrap text-5xl rounded px-8 py-9">
-            {img.heading}
-      </h2>
-              
+          {images.map((img, index) => (
+            <div
+              key={img.id}
+              className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 ${
+                index === currentImageIndex
+                  ? "translate-x-0"
+                  : "translate-x-full"
+              }`}
+              style={{ backgroundImage: `url(${img.image})` }}
+            >
+              {/* Add text caption here */}
+              <div className=" z-10 flex flex-col items-center h-full">
+                <div className="  w-full h-full relative">
+                  <div className=" w-[500px] h-[100px] border-2 flex justify-center items-center bg-white/40 blur-sm">
+                    
+                  </div>
+                  <h2 className=" absolute top-0 left-0  bg-navcolor text-pink-700 text-nowrap text-3xl rounded px-14 py-6">
+                      {img.heading}
+                    </h2>
+                </div>
+              </div>
             </div>
-           
-          </div>
-        </div>
-        ))}
+          ))}
         </div>
       </div>
 
       {/* next button  */}
       <div
-      onClick={handleLeftClick}
+        onClick={handleLeftClick}
         onMouseEnter={handleMouseEnterLeft}
         onMouseLeave={handleMouseLeaveLeft}
         className=" absolute top-[50%] left-8 w-12 h-12 rounded-full bg-white hover:bg-newblue flex justify-center items-center cursor-pointer "
@@ -118,7 +116,7 @@ const Hero = () => {
       </div>
 
       <div
-      onClick={handleRightClick}
+        onClick={handleRightClick}
         onMouseEnter={handleMouseEnterRight}
         onMouseLeave={handleMouseLeaveRight}
         className=" absolute top-[50%] right-8 w-12 h-12 rounded-full bg-white hover:bg-newblue flex justify-center items-center cursor-pointer  "

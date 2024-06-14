@@ -8,17 +8,6 @@ export default {
     "./src/custom.css",
   ],
   theme: {
-    colors: {
-      background: "#000",
-      backgroundContrast: "#111",
-      textBlack: "#1d1d1f",
-      white: "#fff",
-      yellowngo: "#F3CA52",
-      greenngo: "#254d42",
-      greendarknago: "#F3CA52",
-      greensyn: '#254d42',
-      ngodark: '#222627',
-    },
     fontFamily: {
       sans: [
         "SF Pro Display",
@@ -33,6 +22,12 @@ export default {
       Sacramento: [
         "Sacramento", 
         "cursive",
+      ],
+      CormorantUpright: [
+        "Cormorant Upright", "serif"
+      ],
+      Roboto: [
+        "Roboto", "sans-serif"
       ]
     },
     fontSize: {
@@ -57,8 +52,20 @@ export default {
     },
     extend: {
       backgroundImage: {
-        'associtae': "url('/posters/bgbg.jpg')"
-      }
+        'associtae': "url('/posters/bgbg.jpg')",
+        'tagline': "url('/posters/bannerngo.jpg')"
+      },
+      colors: {
+        background: "#000",
+        backgroundContrast: "#111",
+        textBlack: "#1d1d1f",
+        white: "#fff",
+        yellowngo: "#F3CA52",
+        greenngo: "#254d42",
+        greendarknago: "#F3CA52",
+        greensyn: '#254d42',
+        ngodark: '#222627',
+      },
     },
   },
   plugins: [],

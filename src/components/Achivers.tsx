@@ -1,13 +1,13 @@
 // Sample data
 const topScorers = [
     { name: 'Komal', percentage: '76%', img: '/toppers/komal.jpg' },
-    { name: 'Manshi', percentage: '88%', img: 'toppers/manshi.webp' },
+    { name: 'Manshi', percentage: '88%', img: 'toppers/manshi.jpg' },
     { name: 'Ria Gupta', percentage: '76%', img: 'toppers/ria.jpg' },
   ];
   
   const mentor = {
-    name: 'Rishi K Gupta - Associate Mentor',
-    img: '/toppers/rishi.jpeg',
+    name: 'Rishi K Gupta',
+    img: '/toppers/mentor.jpg',
   };
   
   const Notification = () => (
@@ -24,11 +24,11 @@ const topScorers = [
   
   const TopScorerCard = ({ name, percentage, img }: TopScoreCardProps) => (
     <div className="w-full sm:w-1/2 lg:w-1/3 p-2">
-      <div className=" bg-greenngo shadow-lg rounded-lg overflow-hidden">
-        <img src={img} alt={name} className="w-full h-48 object-cover"/>
+      <div className=" shadow-lg rounded-lg overflow-hidden">
+        <img src={img} alt={name} className="w-full h-[450px] object-cover"/>
         <div className="p-4 text-center">
-          <h3 className="text-lg text-white font-bold">{name}</h3>
-          <p className="text-gray-600 text-white">{percentage}</p>
+          <h3 className="text-lg text-ngodark font-semibold">{name}</h3>
+          <p className=" text-ngodark">{percentage}</p>
         </div>
       </div>
     </div>
@@ -41,10 +41,11 @@ const topScorers = [
   
   const MentorCard = ({ name, img }: MentorCardProps) => (
     <div className="w-[303px] h-[270px] p-2">
-      <div className=" bg-greenngo shadow-lg rounded-lg overflow-hidden">
+      <div className=" shadow-lg rounded-lg overflow-hidden">
         <img src={img} alt={name} className="w-full h-48 object-cover"/>
         <div className="p-4 text-center">
-          <h3 className="text-lg text-white font-bold">{name}</h3>
+          <h3 className="text-lg text-ngodark font-semibold">{name}</h3>
+          <h3 className="text-lg text-ngodark font-semibold">Associate Mentor</h3>
         </div>
       </div>
     </div>
@@ -52,9 +53,9 @@ const topScorers = [
   
   const Achivers = () => {
     return (
-      <div className="">
+      <div className=" font-popins">
       <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
-        <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 text-greenngo">
+        <h1 className="text-2xl sm:text-xl lg:text-2xl font-semibold text-center mb-6 text-greenngo">
         KGSV congratulates its Stars for outstanding UP High School Board Examination - 2024 Results
         </h1>
         

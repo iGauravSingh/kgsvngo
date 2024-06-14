@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-700 mt-8 pt-4">
-          <p className="text-center text-gray-500">© 2024 KGSV. All rights reserved.</p>
+          <p className="text-center text-gray-200">© 2024 KGSV. All rights reserved.</p>
         </div>
       </footer>
     );

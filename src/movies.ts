@@ -23,6 +23,25 @@ export type Movie = {
       name: "six",
     },
     { poster: "/img/seven.jpg", name: "seven" },
+    { poster: "/img/eight.jpg", name: "eight" },
+    {
+      poster: "/img/nine.jpg",
+      name: "nine",
+    },
+    {
+      poster: "/img/ten.jpg",
+      name: "tem",
+    },
+    { poster: "/img/eleven.jpg", name: "eleven" },
+    {
+      poster: "/img/twelve.jpg",
+      name: "twelve",
+    },
+    {
+      poster: "/img/thirteen.jpg",
+      name: "thirteen",
+    },
+    { poster: "/img/fourteen.jpg", name: "fourteen" },
   ];
   
   
