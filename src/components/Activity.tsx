@@ -1,14 +1,16 @@
+
+
 import Container from "./Container";
 import ClassesEvents from "./events/ClassesEvents";
-import CordinatorEvent from "./events/CordinatorEvent";
+
 import UpcomingEvents from "./events/UpcomingEvents";
 
 
 const classesData = [
-    {id: 1, desc: "CMC Gram Punnapur",mentor: 'Rishi Kumar Gupta', address: "Tehsil Sidhauli, Distt Sitapur-261303"},
-    {id: 2, desc: "CMC Gram Asal",mentor: 'Shalini Vishwakarma', address: "Tehsil Sidhauli, District Sitapur- 261303"},
-    {id: 3, desc: "PSK - KGSV Centre of Learning , Punnapur",mentor: 'Rishi Kumar Gupta', address: "Tehsil Sidhauli , District Sitapur-261303"},
-    {id: 4, desc: "SVKBPK , Gram Kakrighat",mentor: 'Tanuja Bisht', address: " District Almora - 263678 , Uttarakhand "},
+    {id: 1, desc: "CMC Gram Punnapur",mentor: 'Rishi Kumar Gupta',phone: '8707726641', address: "Tehsil Sidhauli, Distt Sitapur-261303"},
+    {id: 2, desc: "CMC Gram Asal",mentor: 'Shalini Vishwakarma',phone: '9569691760', address: "Tehsil Sidhauli, District Sitapur- 261303"},
+    {id: 3, desc: "PSK - KGSV Centre of Learning , Punnapur",mentor: 'Rishi Kumar Gupta',phone: '8707726641', address: "Tehsil Sidhauli , District Sitapur-261303"},
+    {id: 4, desc: "SVKBPK , Gram Kakrighat",mentor: 'Tanuja Bisht',phone: '9569691760', address: " District Almora - 263678 , Uttarakhand "},
 ]
 
 const upcomingEvents = [
@@ -42,7 +44,7 @@ const Activity = () => {
         <h4 className=" text-lg text-ngodark font-semibold mb-2 mt-6">Mentoring classes of Children </h4>
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {classesData.map((item) => (
-            <div key={item.id} className=""><ClassesEvents id={item.id} desc={item.desc} address={item.address} mentor={item.mentor} /></div>
+            <div key={item.id} className=""><ClassesEvents id={item.id} desc={item.desc} address={item.address} mentor={item.mentor} phone={item.phone} /></div>
         ))}
         </div>
       </div>
@@ -62,14 +64,14 @@ const Activity = () => {
       </div>
 
       {/* Coordinators for Visit  */}
-      <div className=" mt-5">
+      {/* <div className=" mt-5">
         <h3 className=" text-lg font-semibold mb-2">Coordinators for Visit </h3>
         {visitCordinator.map((item) => (
             <div key={item.id} className="">
                 <CordinatorEvent id={item.id} location={item.location} cordinatorName={item.cordinatorName} post={item.post} mobileno={item.mobileno}  />
             </div>
         ))}
-      </div>
+      </div> */}
 
     </div>
     </Container>

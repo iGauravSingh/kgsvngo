@@ -15,7 +15,7 @@ const images = [
   },
   {
     id: 2,
-    heading: "The world is one family",
+    heading: "Vasudhaiva Kutumbakam - The world is one family",
     Decsription: "",
     image: slide2,
   },
@@ -86,16 +86,16 @@ const Hero = () => {
                 index === currentImageIndex
                   ? "translate-x-0"
                   : "translate-x-full"
-              }`}
+              } backdrop-brightness-75`}
               style={{ backgroundImage: `url(${img.image})` }}
             >
               {/* Add text caption here */}
               <div className=" z-10 flex flex-col items-center h-full">
                 <div className="  w-full h-full relative">
-                  <div className=" w-[500px] h-[100px] border-2 flex justify-center items-center bg-white/40 blur-sm">
+                  <div className=" w-[500px] h-[100px] flex justify-center ">
                     
                   </div>
-                  <h2 className=" absolute top-0 left-0  bg-navcolor text-pink-700 text-nowrap text-3xl rounded px-14 py-6">
+                  <h2 className=" absolute top-0 left-0  bg-navcolor text-white text-nowrap text-3xl rounded px-14 py-6">
                       {img.heading}
                     </h2>
                 </div>

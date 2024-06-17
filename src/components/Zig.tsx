@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const items = [
   {
     id: 1,
-    image: "/zig/education.jpg",
+    image: "/zig/new/education.jpg",
     title: "Education",
     qoutes:
       "Education is what remains after one has forgotten what one learnt in school - Albert Einstein",
@@ -13,14 +13,14 @@ const items = [
   },
   {
     id: 2,
-    image: "/zig/clean.jpg",
+    image: "/zig/new/clean.jpg",
     title: "Cleaniness",
     qoutes: "Cleanliness is the hallmark of civilization - Unknown ",
     text: "Promoting cleanliness in the villages is a KGSV priority and integral part of our program. The children, the parents & villagers are educated in personal hygiene and ensuring that they keep their surrounding clean. Under guidance of Mentors, cleanliness drives are undertaken in villages, with children carrying placards, delivering speeches on the importance of cleanliness for health & welfare of all. Our effort to reach out to local primary schools has received enthusiastic support and active participation from school teachers & children.  KGSV children are driving the change. ",
   },
   {
     id: 3,
-    image: "/zig/health.jpg",
+    image: "/zig/new/health.jpg",
     title: "Health",
     qoutes:
       "Healthy citizens are the greatest asset that a country can have - Winston S Churchill",
@@ -28,15 +28,15 @@ const items = [
   },
   {
     id: 4,
-    image: "/zig/enviroment.jpg",
-    title: "Enviroment",
+    image: "/zig/new/enviroment.jpg",
+    title: "Environment",
     qoutes:
       "We do not inherit the world from our ancestors; we borrow it from our children - Unknown",
     text: "Create  awareness in the villages on the urgent need to conserve water, electricity and preserve purity of land, water & air. Envirnomental study is part of KGSV curriculum. Our centres observe the Earth day, the Environmemt Day, the Water day and engage in tree plantation and drives to eliminate the mushrooming parthenium grass. The villagers are periodically engaged in awareness programs to do away with single use plastics, not burning stubble left in farm lands, keeping water bodies & environment clean andf minimize use of chemicals in farming. ",
   },
   {
     id: 5,
-    image: "/zig/wemp.jpg",
+    image: "/zig/new/women.jpg",
     title: "Women Empowerment",
     qoutes:
       "Empowering women is the key to building a future that we want - Amartya Sen",
@@ -44,7 +44,7 @@ const items = [
   },
   {
     id: 6,
-    image: "/zig/agri.jpg",
+    image: "/zig/new/agriculture.jpg",
     title: "Agriculture",
     qoutes:
       "It's been proven that of all the interventions to reduce poverty, improving agricultural productivity is the best - Bill Gates",
@@ -52,10 +52,10 @@ const items = [
   },
   {
     id: 7,
-    image: "/zig/socity.jpg",
-    title: "Rural Society",
+    image: "/zig/new/rural.jpg",
+    title: "Rural Prosperity",
     qoutes:
-      "Strenghten the rural areas by providing opportunity and fulfilling aspirations. This will put a stop to meaningless migration to urban centres, allowing both to flourish - Kgsv  ",
+      "Strenghten the rural areas by providing opportunity and fulfilling aspirations. This will put a stop to meaningless migration to urban centres, allowing both to flourish - KGSV  ",
     text: "It is KGSV's endeavour to help people undertsand that  progress and prosperity are only possible when there is brotherhood amongst people and they work together to create good public institutions / places and environment. That we have be fisrt movers rather than wait for others. We have been explaining to the villagers and KGSV children that 'nothing in life is free' and everything has a cost, which someone pays. KGSV has taken a small step to achieve this through holistic education in villages, promoting a caring & sharing society, in keeping our Vedic adage 'Vasudhaiv Kutumbakam'. ",
   },
 ];
@@ -97,7 +97,7 @@ const Zig = () => {
   return (
     <div className=" pb-7 font-popins overflow-clip flex justify-center  ">
       <div className="  mx-8 my-8">
-        <h2 className=" text-center text-4xl text-greenngo">
+        <h2 className=" text-center text-4xl text-greenngo font-Roboto">
           What does KGSV(केजस्वी) do ?
         </h2>
         {items.map((item) => (
@@ -105,7 +105,7 @@ const Zig = () => {
             key={item.id}
             className=" mt-7  flex flex-col justify-center items-center"
           >
-            <h2 className=" font-bold text-4xl text-greenngo">
+            <h2 className=" font-medium text-[33px] text-greenngo">
               {item.title}
             </h2>
             <div className=" relative flex flex-col lg:flex-row lg:justify-between lg:gap-6 items-center ">
@@ -114,7 +114,7 @@ const Zig = () => {
               <div className=" mt-5 ">
                 {/* Qoutes  */}
                 <div className=" hidden md:block  ">
-                  <p className=" px-2 font-Sacramento text-4xl w-[500px] text-ngodark font-semibold">
+                  <p className=" px-2 font-DancingScript text-4xl w-[500px] text-ngodark font-semibold">
                     {item.qoutes}
                   </p>
                 </div>
