@@ -18,10 +18,10 @@ const upcomingEvents = [
     {id: 2, desc: "Annual Drama Competition", day: "22", month: "may", year: "2024", address: "Lucknow"}
 ]
 
-const visitCordinator = [
-    {id: 1, location: "Punnapur Village", cordinatorName: "Rishi K Gupta", post: "KGSV Associate", mobileno: "8707726641" },
-    {id: 2, location: "Asal Village", cordinatorName: "Ms Shalini Vishwakarma", post: "KGSV Mentor", mobileno: "9569691760" },
-]
+// const visitCordinator = [
+//     {id: 1, location: "Punnapur Village", cordinatorName: "Rishi K Gupta", post: "KGSV Associate", mobileno: "8707726641" },
+//     {id: 2, location: "Asal Village", cordinatorName: "Ms Shalini Vishwakarma", post: "KGSV Mentor", mobileno: "9569691760" },
+// ]
 
 const Activity = () => {
   return (
