@@ -23,9 +23,9 @@ const Header = () => {
       {/* big menu  */}
       <div className=" hidden md:block">
         <div className=" w-screen h-[60px] flex justify-end items-center gap-8 px-[35px] font-Roboto">
-          <p>Home</p>
+          <p className=" cursor-pointer">Home</p>
           <div className=" relative group flex gap-1 items-center">
-            <p>About us</p>
+            <p className=" cursor-pointer">About us</p>
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
@@ -61,7 +61,7 @@ const Header = () => {
           </div>
 
           <div className=" relative group flex gap-1 items-center">
-            <p>Posts</p>
+            <p className=" cursor-pointer">Posts</p>
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48  bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
@@ -80,7 +80,7 @@ const Header = () => {
           </div>
 
           <div className=" relative group flex gap-1 items-center">
-            <p>Get Involved</p>
+            <p className=" cursor-pointer">Get Involved</p>
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
@@ -92,7 +92,7 @@ const Header = () => {
           </div>
 
           <div className=" relative group flex gap-1 items-center">
-            <p>Credentials</p>
+            <p className=" cursor-pointer">Credentials</p>
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
@@ -105,9 +105,9 @@ const Header = () => {
             </div>
           </div>
 
-          <p>Gallery</p>
-          <p>Videos </p>
-          <p>Contact us</p>
+          <p className=" cursor-pointer">Gallery</p>
+          <p className=" cursor-pointer">Videos </p>
+          <p className=" cursor-pointer">Contact us</p>
         </div>
       </div>
 
