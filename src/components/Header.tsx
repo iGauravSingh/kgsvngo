@@ -1,16 +1,15 @@
-"use client"
+"use client";
 import { IoMdMenu } from "react-icons/io";
 
 import { FaAngleDown } from "react-icons/fa6";
 import { useState } from "react";
 
 const Header = () => {
-
-  const [menuCLick, setMenuclick] = useState(false)
+  const [menuCLick, setMenuclick] = useState(false);
 
   const handleClick = () => {
-    setMenuclick(prevState => !prevState)
-  }
+    setMenuclick((prevState) => !prevState);
+  };
 
   return (
     <nav>
@@ -25,24 +24,85 @@ const Header = () => {
       <div className=" hidden md:block">
         <div className=" w-screen h-[60px] flex justify-end items-center gap-8 px-[35px] font-Roboto">
           <p>Home</p>
-          <div className=" flex gap-1 items-center">
+          <div className=" relative group flex gap-1 items-center">
             <p>About us</p>
             <FaAngleDown size={10} />
+            <div className=" hidden group-hover:block absolute top-6 z-50">
+              <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
+                <p className=" cursor-pointer">Who are We</p>
+                <p className=" cursor-pointer">What's KGSV About</p>
+                <p className=" cursor-pointer">Mission & Vision</p>
+                <p className=" cursor-pointer">The First Steps</p>
+                <div className=" relative group/submenu">
+                  <div className=" flex justify-between items-center">
+                    <p className=" cursor-pointer">Our Plans</p>
+                    <FaAngleDown size={10} />
+                  </div>
+                  <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
+                    <p className=" cursor-pointer">Child Education</p>
+                    <p className=" cursor-pointer">Cleanliness</p>
+                    <p className=" cursor-pointer">Child Health & Nutrition</p>
+                    <p className=" cursor-pointer">Environment Conservation</p>
+                    <p className=" cursor-pointer">Women Empowerment</p>
+                  </div>
+                </div>
+                <div className=" relative group/submenuteam ">
+                  <div className="flex justify-between items-center">
+                    <p className=" cursor-pointer">Teams</p>
+                    <FaAngleDown size={10} />
+                  </div>
+                  <div className=" hidden group-hover/submenuteam:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2">
+                    <p className=" cursor-pointer">Founding Team</p>
+                    <p className=" cursor-pointer">Associates & Mentors</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className=" flex gap-1 items-center">
+          <div className=" relative group flex gap-1 items-center">
             <p>Posts</p>
             <FaAngleDown size={10} />
+            <div className=" hidden group-hover:block absolute top-6 z-50">
+              <div className=" w-48  bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
+                <div className=" relative group/submenu">
+                  <div className=" flex justify-between items-center">
+                    <p className=" cursor-pointer">Year 2024</p>
+                    <FaAngleDown size={10} />
+                  </div>
+                  <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
+                    <p className=" cursor-pointer">Current Year</p>
+                    <p className=" cursor-pointer">Previous Years</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div className=" flex gap-1 items-center">
+          <div className=" relative group flex gap-1 items-center">
             <p>Get Involved</p>
             <FaAngleDown size={10} />
+            <div className=" hidden group-hover:block absolute top-6 z-50">
+              <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
+                <p className=" cursor-pointer">Pledge</p>
+                <p className=" cursor-pointer">Wish to Associate</p>
+                <p className=" cursor-pointer">Donate</p>
+              </div>
+            </div>
           </div>
 
-          <div className=" flex gap-1 items-center">
+          <div className=" relative group flex gap-1 items-center">
             <p>Credentials</p>
             <FaAngleDown size={10} />
+            <div className=" hidden group-hover:block absolute top-6 z-50">
+              <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
+                <p className=" cursor-pointer">Credentials</p>
+                <p className=" cursor-pointer">Annual Reports</p>
+                
+                
+                
+              </div>
+            </div>
           </div>
 
           <p>Gallery</p>
@@ -57,34 +117,36 @@ const Header = () => {
           <IoMdMenu size={30} color="#254d42" />
         </div>
 
-        { menuCLick ? (
+        {menuCLick ? (
           <div className=" w-screen h-[200px] bg-greenngo text-white flex flex-col items-end px-7">
-          <p className=" cursor-pointer">Home</p>
-          <div className=" flex gap-1 items-center">
-            <p className=" cursor-pointer">About us</p>
-            <FaAngleDown size={10} />
-          </div>
+            <p className=" cursor-pointer">Home</p>
+            <div className=" flex gap-1 items-center">
+              <p className=" cursor-pointer">About us</p>
+              <FaAngleDown size={10} />
+            </div>
 
-          <div className=" flex gap-1 items-center">
-            <p className=" cursor-pointer">Posts</p>
-            <FaAngleDown size={10} />
-          </div>
+            <div className=" flex gap-1 items-center">
+              <p className=" cursor-pointer">Posts</p>
+              <FaAngleDown size={10} />
+            </div>
 
-          <div className=" flex gap-1 items-center">
-            <p className=" cursor-pointer">Get Involved</p>
-            <FaAngleDown size={10} />
-          </div>
+            <div className=" flex gap-1 items-center">
+              <p className=" cursor-pointer">Get Involved</p>
+              <FaAngleDown size={10} />
+            </div>
 
-          <div className=" flex gap-1 items-center">
-            <p className=" cursor-pointer">Credentials</p>
-            <FaAngleDown size={10} />
-          </div>
+            <div className=" flex gap-1 items-center">
+              <p className=" cursor-pointer">Credentials</p>
+              <FaAngleDown size={10} />
+            </div>
 
-          <p className=" cursor-pointer">Gallery</p>
-          <p className=" cursor-pointer">Videos </p>
-          <p className=" cursor-pointer">Contact us</p>
-        </div>
-        ) : ''}
+            <p className=" cursor-pointer">Gallery</p>
+            <p className=" cursor-pointer">Videos </p>
+            <p className=" cursor-pointer">Contact us</p>
+          </div>
+        ) : (
+          ""
+        )}
       </div>
     </nav>
   );

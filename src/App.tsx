@@ -24,7 +24,7 @@ function App() {
         <VideoCarousel />
         <Tagline />
         <Zig />
-        <div className="custom-gradient">
+        <div className="">
           <Activity />
         <Support />
         <Achivers />
