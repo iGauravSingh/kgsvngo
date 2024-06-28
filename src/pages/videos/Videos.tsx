@@ -3,6 +3,8 @@ import Modal from "react-modal";
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
+import { FaRegPlayCircle } from "react-icons/fa";
+
 Modal.setAppElement("#root");
 
 interface Video {
@@ -81,7 +83,7 @@ const Videos = () => {
           {videos.map((video) => (
             <div
               key={video.id}
-              className="bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
+              className="relative bg-white shadow-lg rounded-lg overflow-hidden cursor-pointer"
               onClick={() => openModal(video.videoUrl)}
             >
               <img
@@ -89,6 +91,7 @@ const Videos = () => {
                 alt={video.title}
                 className="w-full h-48 object-cover"
               />
+              <div className=" absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-80"><FaRegPlayCircle size={50} color="white" /></div>
               {/* <div className="p-4">
             <h2 className="text-xl font-bold">{video.title}</h2>
           </div> */}
