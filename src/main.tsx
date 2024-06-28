@@ -56,6 +56,7 @@ const router = createBrowserRouter(
       <Route path='/currentyear' element={<CurrentYear />} />
       <Route path='/previousyears' element={<PreviousYears />} />
 
+      {/* Get Involved  */}
       <Route path='/pledge' element={<Pledge />} />\
       <Route path='/wish-to-associate' element={<WishToAssociate />} />
       <Route path='/donate' element={<Donate />} />

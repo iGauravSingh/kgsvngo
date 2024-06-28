@@ -24,7 +24,7 @@ const Header = () => {
       {/* big menu  */}
       <div className=" hidden md:block">
         <div className=" w-screen h-[60px] flex justify-end items-center gap-8 px-[35px] font-Roboto">
-          <p className=" cursor-pointer">Home</p>
+          <p className=" cursor-pointer"><Link to="/">Home</Link></p>
           <div className=" relative group flex gap-1 items-center">
             <p className=" cursor-pointer">About us</p>
             <FaAngleDown size={10} />

@@ -58,7 +58,7 @@ const Support = () => {
             </h2>
             <form className="space-y-4">
               <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2 text-greenngo" htmlFor="name">
+                <label className="block  text-sm font-bold mb-2 text-greenngo" htmlFor="name">
                   Enter Name
                 </label>
                 <input
@@ -70,7 +70,7 @@ const Support = () => {
               </div>
     
               <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2 text-greenngo" htmlFor="email">
+                <label className="block  text-sm font-bold mb-2 text-greenngo" htmlFor="email">
                   Enter E-mail
                 </label>
                 <input
@@ -82,7 +82,7 @@ const Support = () => {
               </div>
     
               <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2 text-greenngo" htmlFor="phone">
+                <label className="block  text-sm font-bold mb-2 text-greenngo" htmlFor="phone">
                   Enter Phone Nos
                 </label>
                 <input
@@ -94,7 +94,7 @@ const Support = () => {
               </div>
     
               <div>
-                <label className="block text-gray-700 text-sm font-bold mb-2 text-greenngo" htmlFor="contribution">
+                <label className="block  text-sm font-bold mb-2 text-greenngo" htmlFor="contribution">
                   Area of Proposed Contribution
                 </label>
                 <textarea
