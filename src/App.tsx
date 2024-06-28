@@ -10,31 +10,33 @@ import Zig from "./components/Zig";
 import Hero from "./components/section/Hero";
 
 import { VideoCarousel } from "./components/section/Video-carousel";
+import { Outlet } from "react-router-dom";
 
 
 function App() {
   return (
-    <div className="">
-      <Header />
-      <main className="">
-        <div className="z-10">
-          <Hero />
+    <Outlet />
+    // <div className="">
+    //   <Header />
+    //   <main className="">
+    //     <div className="z-10">
+    //       <Hero />
           
-        </div>
-        <VideoCarousel />
-        <Tagline />
-        <Zig />
-        <div className="">
-          <Activity />
-        <Support />
-        <Achivers />
-        </div>
+    //     </div>
+    //     <VideoCarousel />
+    //     <Tagline />
+    //     <Zig />
+    //     <div className="">
+    //       <Activity />
+    //     <Support />
+    //     <Achivers />
+    //     </div>
         
-        <Footer />
-        {/* <TestImageText /> */}
-        {/* <Glassmorphism /> */}
-      </main>
-    </div>
+    //     <Footer />
+    //     {/* <TestImageText /> */}
+    //     {/* <Glassmorphism /> */}
+    //   </main>
+    // </div>
   );
 }
 

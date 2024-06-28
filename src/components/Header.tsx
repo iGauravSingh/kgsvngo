@@ -3,6 +3,7 @@ import { IoMdMenu } from "react-icons/io";
 
 import { FaAngleDown } from "react-icons/fa6";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [menuCLick, setMenuclick] = useState(false);
@@ -29,31 +30,69 @@ const Header = () => {
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
-                <p className=" cursor-pointer">Who are We</p>
-                <p className=" cursor-pointer">What's KGSV About</p>
-                <p className=" cursor-pointer">Mission & Vision</p>
-                <p className=" cursor-pointer">The First Steps</p>
+                <Link to="/whoweare" className=" cursor-pointer">
+                  Who are We
+                </Link>
+                <Link to="/whatkgsvabout" className=" cursor-pointer">
+                  What's KGSV About
+                </Link>
+                <Link to="/missionvision" className=" cursor-pointer">
+                  Mission & Vision
+                </Link>
+                <Link to="/firststeps" className=" cursor-pointer">
+                  The First Steps
+                </Link>
                 <div className=" relative group/submenu">
                   <div className=" flex justify-between items-center">
-                    <p className=" cursor-pointer">Our Plans</p>
+                    <Link to="/ourplans" className=" cursor-pointer">
+                      Our Plans
+                    </Link>
                     <FaAngleDown size={10} />
                   </div>
                   <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
-                    <p className=" cursor-pointer">Child Education</p>
-                    <p className=" cursor-pointer">Cleanliness</p>
-                    <p className=" cursor-pointer">Child Health & Nutrition</p>
-                    <p className=" cursor-pointer">Environment Conservation</p>
-                    <p className=" cursor-pointer">Women Empowerment</p>
+                    <p>
+                      <Link to="/childeducation" className=" cursor-pointer">
+                        Child Education
+                      </Link>
+                    </p>
+                    <p>
+                      <Link to="/cleanliness" className=" cursor-pointer">
+                        Cleanliness
+                      </Link>
+                    </p>
+                    <p>
+                      <Link to="/child-health-nutrition" className=" cursor-pointer">
+                        Child Health & Nutrition
+                      </Link>
+                    </p>
+                    <p>
+                      <Link to="/enviroment-conservation" className=" cursor-pointer">
+                        Environment Conservation
+                      </Link>
+                    </p>
+                    <p>
+                      <Link to="/women-empowerment" className=" cursor-pointer">
+                        Women Empowerment
+                      </Link>
+                    </p>
                   </div>
                 </div>
                 <div className=" relative group/submenuteam ">
                   <div className="flex justify-between items-center">
-                    <p className=" cursor-pointer">Teams</p>
+                    <Link to="/" className=" cursor-pointer">
+                      Teams
+                    </Link>
                     <FaAngleDown size={10} />
                   </div>
                   <div className=" hidden group-hover/submenuteam:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2">
-                    <p className=" cursor-pointer">Founding Team</p>
-                    <p className=" cursor-pointer">Associates & Mentors</p>
+                  <p><Link to="/foundingteam" className=" cursor-pointer">
+                      Founding Team
+                    </Link></p>
+                    
+                    <p><Link to="/associates-mentors" className=" cursor-pointer">
+                      Associates & Mentors
+                    </Link></p>
+                    
                   </div>
                 </div>
               </div>
@@ -71,8 +110,8 @@ const Header = () => {
                     <FaAngleDown size={10} />
                   </div>
                   <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
-                    <p className=" cursor-pointer">Current Year</p>
-                    <p className=" cursor-pointer">Previous Years</p>
+                    <p className=" cursor-pointer"><Link to='/currentyear' >Current Year</Link></p>
+                    <p className=" cursor-pointer"><Link to='/previousyears' >Previous Years</Link></p>
                   </div>
                 </div>
               </div>
@@ -84,9 +123,9 @@ const Header = () => {
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
-                <p className=" cursor-pointer">Pledge</p>
-                <p className=" cursor-pointer">Wish to Associate</p>
-                <p className=" cursor-pointer">Donate</p>
+                <p className=" cursor-pointer"><Link to='/pledge' >Pledge</Link></p>
+                <p className=" cursor-pointer"><Link to='/wish-to-associate' >Wish to Associate</Link></p>
+                <p className=" cursor-pointer"><Link to='/donate' >Donate</Link></p>
               </div>
             </div>
           </div>
@@ -96,18 +135,15 @@ const Header = () => {
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
-                <p className=" cursor-pointer">Credentials</p>
-                <p className=" cursor-pointer">Annual Reports</p>
-                
-                
-                
+                <p className=" cursor-pointer"><Link to='/credentials' >Credentials</Link></p>
+                <p className=" cursor-pointer"><Link to='/annual-reports' >Annual Reports</Link></p>
               </div>
             </div>
           </div>
 
-          <p className=" cursor-pointer">Gallery</p>
-          <p className=" cursor-pointer">Videos </p>
-          <p className=" cursor-pointer">Contact us</p>
+          <p className=" cursor-pointer"><Link to='/gallery' >Gallery</Link></p>
+          <p className=" cursor-pointer"><Link to='/video' >Videos</Link> </p>
+          <p className=" cursor-pointer"><Link to='/contact' >Contact us</Link></p>
         </div>
       </div>
 
