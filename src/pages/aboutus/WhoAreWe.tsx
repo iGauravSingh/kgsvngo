@@ -6,7 +6,7 @@ const WhoAreWe = () => {
   return (
     <>
     <Header />
-    <div className="App">
+    <div className="App font-popins">
       {/* Full screen image with text on top */}
       <div className="relative w-full h-[256px] bg-cover bg-center" style={{ backgroundImage: "url('/img/eleven.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>

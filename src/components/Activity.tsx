@@ -25,7 +25,7 @@ const upcomingEvents = [
 
 const Activity = () => {
   return (
-    <div className=" pb-10">
+    <div className=" pb-10 font-popins">
       <Container> 
       <div className=" font-popins pt-7 mb-10">
       {/* heading  */}

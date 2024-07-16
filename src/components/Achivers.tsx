@@ -32,7 +32,7 @@ const topScorers = [
   }
   
   const TopScorerCard = ({ name, percentage, img }: TopScoreCardProps) => (
-    <div className="w-full sm:w-1/2 lg:w-1/3 p-2">
+    <div className="w-full sm:w-1/2 lg:w-1/3 p-2 font-popins">
       <div className=" shadow-lg rounded-lg overflow-hidden">
         <img src={img} alt={name} className="w-full h-[250px] object-cover object-top"/>
         <div className="p-4 text-center">
@@ -49,7 +49,7 @@ const topScorers = [
   }
   
   const MentorCard = ({ name, img }: MentorCardProps) => (
-    <div className="w-[303px] h-[270px] p-2">
+    <div className="w-[303px] h-[270px] p-2 font-popins">
       <div className=" shadow-lg rounded-lg overflow-hidden">
         <img src={img} alt={name} className="w-full h-48 object-cover"/>
         <div className="p-4 text-center">

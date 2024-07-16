@@ -52,7 +52,7 @@ const Gallery = () => {
     <Header />
 
     <>
-    <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 mb-9">
+    <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-5 mb-9 font-popins">
       {images.map((image) => (
         <div
           key={image.id}
