@@ -19,6 +19,12 @@ const topScorers = [
     </div>
   );
 
+  const Notification2 = () => (
+    <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
+      <p>UP High School Board Exam Results.</p>
+    </div>
+  );
+
   interface TopScoreCardProps {
     name: string;
     percentage: string;
@@ -61,11 +67,14 @@ const topScorers = [
       <div className=" flex justify-center gap-5">
       <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
       <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
+        <div>
         <h1 className="text-2xl sm:text-xl lg:text-2xl font-semibold text-center mb-6 text-greenngo">
           
-        KGSV congratulates its Stars
-        
-        </h1>
+          KGSV Congratulates its Stars 
+          
+          </h1>
+          
+        </div>
         <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
         <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
       </div>
@@ -82,6 +91,7 @@ const topScorers = [
           <MentorCard name={mentor.name} img={mentor.img} />
         </div>
 
+        <Notification2 />  
         <Notification />
 
       </div>

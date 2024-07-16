@@ -50,15 +50,19 @@ const items = [
       "It's been proven that of all the interventions to reduce poverty, improving agricultural productivity is the best - Bill Gates",
     text: "KGSV has been creating awreness amongst farmers on the benefits use of organic fertlizers, soil testing, use of environment friendly pest control methods and organic farming. We are helping connect the farmers to the Krishi Vigyan Kendra (ICAR), Amber, District Sidhauli that has provided good quality seeds, advises on tackling agricultre related problems, increase production  and also provides training. The Women have been helped grow vegetables in small kitchen gardens, at home, for consumption. The farmers are also made aware of the menace of parthenium grass & the damage the burning of stubble causes to the soil & environment. ",
   },
+  
+];
+
+const ruralprospdata =[
   {
     id: 7,
     image: "/zig/new/rural.jpg",
     title: "Rural Prosperity",
     qoutes:
-      "Strenghten the rural areas by providing opportunity and fulfilling aspirations. This will put a stop to meaningless migration to urban centres, allowing both to flourish - KGSV  ",
+      "Strenghten the rural areas by providing opportunity and fulfilling aspirations. This will put a stop to meaningless migration to urban centres, allowing both to flourish ",
     text: "It is KGSV's endeavour to help people undertsand that  progress and prosperity are only possible when there is brotherhood amongst people and they work together to create good public institutions / places and environment. That we have be fisrt movers rather than wait for others. We have been explaining to the villagers and KGSV children that 'nothing in life is free' and everything has a cost, which someone pays. KGSV has taken a small step to achieve this through holistic education in villages, promoting a caring & sharing society, in keeping our Vedic adage 'Vasudhaiv Kutumbakam'. ",
-  },
-];
+  }
+] 
 
 const boxVariant = {
   hidden: {
@@ -116,6 +120,58 @@ const Zig = () => {
                 <div className=" hidden md:block  ">
                   <p className=" px-2 font-DancingScript text-4xl w-[500px] text-ngodark font-semibold">
                     {item.qoutes}
+                  </p>
+                </div>
+                {/* text on right  */}
+                <motion.div
+                  variants={boxVariant2}
+                  initial="hidden"
+                  whileInView="show"
+                  className=" w-[400px] md:w-[500px] lg:w-[550px]  mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
+                >
+                  <p className=" text-justify">{item.text}</p>
+                </motion.div>
+              </div>
+              
+
+              {/* image on left  lg:-mt-32 */}
+
+              <div className=" lg:h-[498px] mt-4 ">
+              <motion.div
+                variants={boxVariant}
+                initial="hidden"
+                whileInView="show"
+                className=" w-[400px] md:w-[500px] lg:w-[550px] h-[350px] rounded-3xl overflow-clip "
+              >
+                <img
+                  className=" w-full h-full object-cover"
+                  src={item.image}
+                  alt={item.title}
+                />
+              </motion.div>
+              </div>
+            </div>
+          </div>
+        ))}
+
+        {/* rural prosperity section  */}
+
+        {ruralprospdata.map((item) => (
+          <div
+            key={item.id}
+            className=" mt-7  flex flex-col justify-center items-center"
+          >
+            <h2 className=" font-medium text-[33px] text-greenngo">
+              {item.title}
+            </h2>
+            <div className=" relative flex flex-col lg:flex-row lg:justify-between lg:gap-6 items-center ">
+              
+              {/* Qoutes and text container  */}
+              <div className=" mt-5 ">
+                {/* Qoutes  */}
+                <div className=" hidden md:block  ">
+                  <p className=" px-2 font-DancingScript text-4xl w-[500px] text-ngodark font-semibold">
+                    {item.qoutes} <span className="text-3xl">-KGSV</span>
                   </p>
                 </div>
                 {/* text on right  */}

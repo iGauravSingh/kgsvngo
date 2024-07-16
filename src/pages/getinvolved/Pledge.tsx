@@ -23,7 +23,7 @@ const Pledge = () => {
 
       {/* Quotes Section */}
       <div className="mb-8">
-        <blockquote className="text-xl italic font-semibold text-gray-900 text-justify">
+        <blockquote className="text-xl italic font-semibold text-gray-900 text-justify leading-7 tracking-wide">
           "KGSV Foundation aims to build a few model villages. This requires support & cooperation from everyone, no matter how small the contribution. It would be a privilege to have you associate with us. We could begin the journey, by taking a small pledge on some key issues that we all believe in. This will be a very significant first step, towards realizing our goals."
         </blockquote>
       </div>
@@ -33,7 +33,7 @@ const Pledge = () => {
       {/* Paragraph with List Elements */}
       <div className="mb-12 flex justify-center mt-12">
         
-        <ul className="list-disc list-inside pl-4 text-gray-800 space-y-5 text-base text-justify">
+        <ul className="list-disc list-inside pl-4 text-gray-800 space-y-5 text-base text-justify leading-7 tracking-wide">
           <li>to conserve water and take special care to save while I drink, clean , wash or bathe at home or in any public place.</li>
           <li>to maintain purity of air - take care to minimize burning of any material that contaminates or releases toxic gases into the environment</li>
           <li>to 'cleanliness of public places'. Will carry garbage bag & bring home my litter & garbage. Will use public-bins only if clean & maintained</li>
@@ -45,7 +45,7 @@ const Pledge = () => {
       </div>
 
       {/* Notification at the Bottom */}
-      <div className=" inset-x-0 p-4 bg-green-500 text-white text-center mb-12">
+      <div className=" inset-x-0 p-4 bg-green-500 text-white text-center mb-12 leading-7 tracking-wide">
         <p>We also invite you to associate with the KGSV Foundation and further its cause in other ways, outlined here</p>
       </div>
     </div>

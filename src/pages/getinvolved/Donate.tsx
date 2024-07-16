@@ -31,7 +31,7 @@ const Donate = () => {
         <img
           src="/img/three.jpg"
           alt="Hero Image"
-          className="w-full h-[400px] object-cover object-top brightness-90"
+          className="w-full h-64 object-cover object-top brightness-90"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-3xl font-bold">Support Our Cause</h1>
@@ -40,9 +40,9 @@ const Donate = () => {
 
       {/* About Section */}
       <div className="mb-8">
-        <h2 className="text-xl font-bold mb-4 text-center">
+        <h2 className="text-xl font-bold mb-4 text-center leading-9 tracking-wide">
         Thank you for considering a donation to the KGSV Foundation</h2>
-        <p className="text-lg text-gray-800 mb-4 text-center">
+        <p className="text-lg text-gray-800 mb-4 text-center leading-7 tracking-wide">
         The Foundation accepts financial support for carrying out welfare work in Indian villages
         </p>
       </div>

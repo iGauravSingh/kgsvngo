@@ -23,7 +23,7 @@ const Contactus = () => {
     <>
     <Header />
     <>
-    <div className="container mx-auto p-4 flex flex-col md:flex-row">
+    <div className="container mx-auto p-4 flex flex-col md:flex-row font-popins">
       {/* Form on the left */}
       <div className="md:w-1/2 p-4">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
@@ -66,7 +66,7 @@ const Contactus = () => {
           </div>
           <button
             type="submit"
-            className="bg-indigo-500 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+            className="bg-green-700 text-white py-2 px-4 rounded-md shadow-sm hover:bg-green-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
           >
             Submit
           </button>
@@ -77,9 +77,11 @@ const Contactus = () => {
       <div className="md:w-1/2 p-4">
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-xl font-bold mb-4">Contact Details</h2>
-          <p className="text-gray-700 mb-2">Email: contact@example.com</p>
-          <p className="text-gray-700 mb-2">Phone: +123 456 7890</p>
-          <p className="text-gray-700 mb-4">Address: 1234 Example St, City, Country</p>
+          <p className="text-gray-700 mb-2 font-semibold">Khushhal Gram Samaj Vikas Foundation</p>
+          <p className="text-gray-700 mb-2">Email: admin@kgsv.in</p>
+          <p className="text-gray-700 mb-2">CIN: – U74994UP2019NPL113235</p>
+          <p className="text-gray-700 mb-2">Phone: +91-9415752856</p>
+          
           <img
             src="/img/eleven.jpg"
             alt="Contact"

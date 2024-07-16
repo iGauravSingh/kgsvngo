@@ -44,7 +44,7 @@ const Header = () => {
                 </Link>
                 <div className=" relative group/submenu">
                   <div className=" flex justify-between items-center">
-                    <Link to="/ourplans" className=" cursor-pointer">
+                    <Link to="/" className=" cursor-pointer">
                       Our Plans
                     </Link>
                     <FaAngleDown size={10} />

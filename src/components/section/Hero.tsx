@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const slide1 = "/posters/mustard.jpg";
 const slide2 = "/posters/bagan.jpg";
-const slide3 = "/posters/mustard.jpg";
+const slide3 = "/posters/vv.png";
 
 const images = [
   {
@@ -92,12 +92,10 @@ const Hero = () => {
               {/* Add text caption here */}
               <div className=" z-10 flex flex-col items-center h-full">
                 <div className="  w-full h-full relative">
-                  <div className=" w-[500px] h-[100px] flex justify-center ">
-                    
-                  </div>
+                  <div className=" w-[500px] h-[100px] flex justify-center "></div>
                   <h2 className=" absolute top-0 left-0  bg-navcolor text-white text-nowrap text-3xl rounded px-14 py-6">
-                      {img.heading}
-                    </h2>
+                    {img.heading}
+                  </h2>
                 </div>
               </div>
             </div>

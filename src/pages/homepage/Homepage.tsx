@@ -12,7 +12,7 @@ import Footer from '../../components/Footer'
 const Homepage = () => {
   return (
     <>
-    <div className="">
+    <div className=" font-popins">
       <Header />
       <main className="">
         <div className="z-10">
