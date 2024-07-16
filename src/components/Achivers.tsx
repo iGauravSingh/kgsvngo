@@ -13,17 +13,17 @@ const topScorers = [
     img: '/toppers/mentor.jpg',
   };
   
-  const Notification = () => (
-    <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
-      <p>Komal, Manshi & Ria have now enrolled at Gandhi Vidhyalaya, Sidhauli for pursuing the Intermediate course.</p>
-    </div>
-  );
+  // const Notification = () => (
+  //   <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
+  //     <p>Komal, Manshi & Ria have now enrolled at Gandhi Vidhyalaya, Sidhauli for pursuing the Intermediate course.</p>
+  //   </div>
+  // );
 
-  const Notification2 = () => (
-    <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
-      <p>UP High School Board Exam Results.</p>
-    </div>
-  );
+  // const Notification2 = () => (
+  //   <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
+  //     <p>UP High School Board Exam Results.</p>
+  //   </div>
+  // );
 
   interface TopScoreCardProps {
     name: string;
@@ -39,6 +39,7 @@ const topScorers = [
           <h3 className="text-lg text-ngodark font-semibold">{name}</h3>
           <p className=" text-ngodark">{percentage}</p>
         </div>
+        <p></p>
       </div>
     </div>
   );
@@ -91,8 +92,8 @@ const topScorers = [
           <MentorCard name={mentor.name} img={mentor.img} />
         </div>
 
-        <Notification2 />  
-        <Notification />
+        {/* <Notification2 />   */}
+        {/* <Notification /> */}
 
       </div>
       </div>

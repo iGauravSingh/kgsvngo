@@ -17,13 +17,13 @@ const WishToAssociate = () => {
           className="w-full h-64 object-cover brightness-90"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-3xl font-bold">Wish To Associate</h1>
+          {/* <h1 className="text-white text-3xl font-bold">Wish To Associate</h1> */}
         </div>
       </div>
 
       {/* Quotes Section */}
       <div className="mb-8">
-        <blockquote className="text-xl italic font-semibold text-gray-900 text-justify">
+        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-cyan-500 px-2 py-2 text-justify">
         "We are a start-up organisation and are in process of building a team & partners. We require help for our Projects in Rural India in field of - education, garbage management, health & nutrition, clean & green environment, agriculture, women empowerment, skills in creating job opportunities & helping a sustainable living. Your knowledge, expertise & passion would be an asset in realising our goals.""
         </blockquote>
       </div>
@@ -35,7 +35,7 @@ const WishToAssociate = () => {
       </div>
 
      <div className=" flex justify-center mt-8 mb-10">
-     <form className="space-y-4 sm:w-[300px] md:w-[500px] lg:w-[600px] bg-green-100 px-9 py-8 rounded-lg">
+     <form className="space-y-4 sm:w-[300px] md:w-[500px] lg:w-[600px] bg-cyan-100 px-9 py-8 rounded-lg">
       <h1 className=" text-center text-3xl font-semibold font-DancingScript">Associate Form</h1>
               <div>
                 <label className="block  text-sm font-bold mb-2 text-greenngo" htmlFor="name">
