@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const slide1 = "/posters/mustard.jpg";
 const slide2 = "/posters/bagan.jpg";
-const slide3 = "/posters/vv.png";
+const slide3 = "/posters/mustard.jpg";
 
 const images = [
   {
@@ -19,12 +19,7 @@ const images = [
     Decsription: "",
     image: slide2,
   },
-  {
-    id: 3,
-    heading: "वसुधैव कुटुम्बकम् - विश्व एक परिवार है",
-    Decsription: "",
-    image: slide3,
-  },
+  
 ];
 
 const Hero = () => {
@@ -93,7 +88,7 @@ const Hero = () => {
               <div className=" z-10 flex flex-col items-center h-full">
                 <div className="  w-full h-full relative">
                   <div className=" w-[500px] h-[100px] flex justify-center "></div>
-                  <h2 className=" absolute top-0 left-0  bg-navcolor text-white text-nowrap text-3xl rounded px-14 py-6">
+                  <h2 className={` absolute aspect-auto -top-4 left-1/2 -translate-x-1/2   bg-navcolor  text-nowrap text-3xl rounded px-14 py-6 ${img.id == 1 ? 'text-red-500' : 'text-white'}`}>
                     {img.heading}
                   </h2>
                 </div>
