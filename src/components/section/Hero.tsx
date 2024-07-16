@@ -4,7 +4,7 @@ import { IoIosArrowForward } from "react-icons/io";
 
 const slide1 = "/posters/mustard.jpg";
 const slide2 = "/posters/bagan.jpg";
-const slide3 = "/posters/mustard.jpg";
+// const slide3 = "/posters/mustard.jpg";
 
 const images = [
   {
