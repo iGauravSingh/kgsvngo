@@ -42,23 +42,27 @@ const Activity = () => {
       <div className=" mt-4 ">
       {/* <h3 className=" text-xl text-greenngo text-center font-bold">Ongoing Activitys</h3> */}
         <h4 className=" text-lg text-ngodark font-semibold mb-2 mt-6">Mentoring classes of Children </h4>
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+        <div className=" flex justify-center">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {classesData.map((item) => (
             <div key={item.id} className=""><ClassesEvents id={item.id} desc={item.desc} address={item.address} mentor={item.mentor} phone={item.phone} /></div>
         ))}
+        </div>
         </div>
       </div>
 
       {/* upcoming Events  */}
       <div className=" mt-5">
         <h3 className=" text-xl font-bold mb-2">Upcoming Events</h3>
-        <div className=" grid grid-cols-1 md:grid-cols-2 gap-2">
+        <div className=" flex justify-center">
+        <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
         {upcomingEvents.map((item)=> (
             <div key={item.id} className="">
                 <UpcomingEvents id={item.id} day={item.day} month={item.month} year={item.year} desc={item.desc} address={item.address} />
                 
             </div>
         ))}
+        </div>
         </div>
         
       </div>
