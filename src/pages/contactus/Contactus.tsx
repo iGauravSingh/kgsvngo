@@ -80,7 +80,7 @@ const Contactus = () => {
           <p className="text-gray-700 mb-2 font-semibold">Khushhal Gram Samaj Vikas Foundation</p>
           <p className="text-gray-700 mb-2">Email: admin@kgsv.in</p>
           <p className="text-gray-700 mb-2">CIN: – U74994UP2019NPL113235</p>
-          <p className="text-gray-700 mb-2">Phone: +91-9415752856</p>
+          <p className="text-gray-700 mb-2">Phone: +91-7838828225</p>
           
           <img
             src="/img/eleven.jpg"
