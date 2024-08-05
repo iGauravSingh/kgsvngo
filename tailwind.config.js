@@ -66,10 +66,20 @@ export default {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
         },
+
+        "pigin-move": {
+        '0%, 100%': { translate: '0 0'},
+        '20%': { translate: '0 -5px'},
+        '40%': { translate: '0 -10px'},
+        '50%': { translate: '0 -12.5px'},
+        '60%': { translate: '0 -10px'},
+        '80%': { translate: '0 -5px'},
+      }
         
       },
       animation: {
-        "carousel-move": "carousel-move var(--duration,80s) infinite"
+        "carousel-move": "carousel-move var(--duration,80s) infinite",
+        "pigin-move": "pigin-move 3.5s ease-in-out infinite"
       },
     },
   },

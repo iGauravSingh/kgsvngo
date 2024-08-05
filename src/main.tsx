@@ -31,6 +31,7 @@ import AnnualReports from './pages/credentials/AnnualReports.tsx';
 import Gallery from './pages/gallery/Gallery.tsx';
 import Videos from './pages/videos/Videos.tsx';
 import Contactus from './pages/contactus/Contactus.tsx';
+import RememberingGurudev from './pages/aboutus/RememberingGurudev.tsx';
 
 
 
@@ -41,6 +42,7 @@ const router = createBrowserRouter(
       <Route path='/whoweare' element={<WhoAreWe />} />
       <Route path='/whatkgsvabout' element={<WhatKGSVAbout />} />
       <Route path='/missionvision' element={<MissionVision />} />
+      <Route path='/remembering-gurudev' element={<RememberingGurudev />} />
       {/* <Route path='/teams' element={<WhoAreWe />} /> */}
       {/* <Route path='/ourplans' element={<WhoAreWe />} /> */}
 
