@@ -13,11 +13,11 @@ const topScorers = [
     img: '/toppers/mentor.jpg',
   };
   
-  // const Notification = () => (
-  //   <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
-  //     <p>Komal, Manshi & Ria have now enrolled at Gandhi Vidhyalaya, Sidhauli for pursuing the Intermediate course.</p>
-  //   </div>
-  // );
+  const Notification = () => (
+    <div className="bg-yellow-100 border-l-4 border-r-4 border-yellow-500 text-yellow-700 p-4 mb-4 text-center" role="alert">
+      <p>U.P Board High School Result</p>
+    </div>
+  );
 
   // const Notification2 = () => (
   //   <div className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-4" role="alert">
@@ -81,8 +81,9 @@ const topScorers = [
       </div>
         
         
-  
+        <Notification />
         <div className="flex flex-wrap lg:flex-nowrap justify-center">
+          
           {topScorers.map((scorer, index) => (
             <TopScorerCard key={index} name={scorer.name} percentage={scorer.percentage} img={scorer.img} />
           ))}
