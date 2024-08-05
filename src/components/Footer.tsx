@@ -2,7 +2,7 @@
 const Footer = () => {
     return (
       <footer className=" bg-greensyn text-white py-8 font-popins">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-screen mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/3 px-4">
               <h2 className="text-lg font-bold mb-4">Contact Us</h2>
