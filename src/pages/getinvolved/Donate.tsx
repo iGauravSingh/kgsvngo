@@ -1,26 +1,12 @@
 import Footer from "../../components/Footer";
 import Header from "../../components/Header";
 
-import { useForm, SubmitHandler } from "react-hook-form";
 
-interface DonationFormInputs {
-  name: string;
-  email: string;
-  amount: number;
-  message?: string;
-}
+
+
 
 const Donate = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<DonationFormInputs>();
-
-  const onSubmit: SubmitHandler<DonationFormInputs> = (data) => {
-    console.log(data);
-    // Handle form submission, e.g., send data to the backend
-  };
+  
 
   return (
     <>
