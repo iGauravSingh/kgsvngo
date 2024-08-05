@@ -47,68 +47,19 @@ const Donate = () => {
         </p>
       </div>
 
-      {/* Donation Form */}
-      <div className=" w-full flex justify-center">
-      <div className=" p-6 rounded-lg shadow-lg mb-8 sm:w-[300px] md:w-[500px] lg:w-[600px] bg-green-100">
-        <h2 className="text-2xl font-bold mb-4">Donate Now</h2>
-        <form onSubmit={handleSubmit(onSubmit)}>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-              Name
-            </label>
-            <input
-              id="name"
-              type="text"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              {...register('name', { required: 'Name is required' })}
-            />
-            {errors.name && <p className="text-red-500 text-xs mt-1">{errors.name.message}</p>}
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-              Email
-            </label>
-            <input
-              id="email"
-              type="email"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              {...register('email', { required: 'Email is required' })}
-            />
-            {errors.email && <p className="text-red-500 text-xs mt-1">{errors.email.message}</p>}
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="amount">
-              Donation Amount
-            </label>
-            <input
-              id="amount"
-              type="number"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              {...register('amount', { required: 'Donation amount is required', min: 1 })}
-            />
-            {errors.amount && <p className="text-red-500 text-xs mt-1">{errors.amount.message}</p>}
-          </div>
-          <div className="mb-4">
-            <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-              Message (Optional)
-            </label>
-            <textarea
-              id="message"
-              className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-              {...register('message')}
-            ></textarea>
-          </div>
-          <div className="flex items-center justify-between">
-            <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g=="
-              type="submit"
-              target="_blank"
-              className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-            >
-              Donate
-            </a>
-          </div>
-        </form>
-      </div>
+      <p className=" text-xl leading-7 tracking-wide ml-8">The following may kindly be noted:</p>
+
+      <ul className=" list-disc text-justify mx-24 mt-8 space-y-4 tracking-wide leading-6 text-lg">
+        <li>Donations are accepted only through on-line transfers to the 'Khushhal Gram Samaj Vikas Foundation' Current Account Nos. 167105001205 / IFSC Code ICIC0001671 with ICICI Bank, Vibhuti khand, Gomtinagar Branch, Lucknow - 226010</li>
+        <li>We do not accept donations in cash or through cheques/drafts.</li>
+        <li>PLEASE DO NOT HAND OVER CASH TO ANYONE, CLAIMING TO  REPRESENT KGSV Foundation.</li>
+        <li>The inconvenience caused, due to our not accepting cash or cheque or draft, is deeply regretted. Kindly bear with us.</li>
+        <li>Applied for Deductions under Section 80 (G) of Income Tax Act, 1961</li>
+      </ul>
+
+      <div className=" flex mt-16 justify-between items-center mx-24">
+      <button className=" px-5 py-3 bg-ngodark text-slate-50 text-lg rounded-lg hover:bg-greenngo"><a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==">Donate</a></button>
+      <p className="text-lg">KGSV Foundation thanks you for your kind patronage</p>
       </div>
 
       {/* Notification Section */}
