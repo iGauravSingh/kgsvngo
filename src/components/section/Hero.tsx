@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-const slide1 = "/posters/mustard.jpg";
+const slide1 = "/posters/mustard5.jpg";
 const slide2 = "/posters/bagan.jpg";
 // const slide3 = "/posters/mustard.jpg";
 
@@ -77,7 +77,7 @@ const Hero = () => {
           {images.map((img, index) => (
             <div
               key={img.id}
-              className={`absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-1000 ${
+              className={`absolute inset-0 w-full h-full bg-cover bg-no-repeat bg-center transition-transform duration-1000 ${
                 index === currentImageIndex
                   ? "translate-x-0"
                   : "translate-x-full"
@@ -88,7 +88,7 @@ const Hero = () => {
               <div className=" z-10 flex flex-col items-center h-full">
                 <div className="  w-full h-full relative">
                   <div className=" w-[500px] h-[100px] flex justify-center "></div>
-                  <h2 className={` absolute aspect-auto -top-4 left-1/2 -translate-x-1/2   bg-navcolor  text-nowrap text-4xl rounded px-14 py-6 ${img.id == 1 ? 'text-[#ef2f4c]' : 'text-white'}`}>
+                  <h2 className={` absolute aspect-auto -top-4 left-1/2 -translate-x-1/2   bg-navcolor  text-nowrap text-4xl rounded px-14 py-6 ${img.id == 1 ? 'text-white' : 'text-white'}`}>
                     {img.heading}
                   </h2>
                 </div>

@@ -8,6 +8,7 @@ import Activity from '../../components/Activity'
 import Support from '../../components/Support'
 import Achivers from '../../components/Achivers'
 import Footer from '../../components/Footer'
+import DonateSection from '../../components/DonateSection'
 
 const Homepage = () => {
   return (
@@ -27,7 +28,7 @@ const Homepage = () => {
         <Support />
         <Achivers />
         </div>
-        
+        <DonateSection />
         <Footer />
         {/* <TestImageText /> */}
         {/* <Glassmorphism /> */}
