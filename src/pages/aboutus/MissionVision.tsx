@@ -6,7 +6,7 @@ const MissionVision = () => {
   return (
     <>
     <Header />
-    <div className="container mx-auto font-popins">
+    <div className=" mx-8 font-popins">
       {/* Image on top with text */}
       <div className="relative w-full h-64">
         <img
@@ -15,7 +15,7 @@ const MissionVision = () => {
           className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-3xl font-bold">Mission And Vision</span>
+          <span className="text-white text-4xl font-bold font-CormorantUpright">Mission And Vision</span>
         </div>
       </div>
 

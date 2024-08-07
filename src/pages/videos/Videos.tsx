@@ -79,7 +79,7 @@ const Videos = () => {
       <Header />
 
       <>
-        <div className="container mx-auto p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-7 mb-8 font-popins">
+        <div className=" mx-8 p-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-7 mb-8 font-popins">
           {videos.map((video) => (
             <div
               key={video.id}

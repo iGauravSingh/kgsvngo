@@ -31,6 +31,9 @@ export default {
       ],
       DancingScript: [
         "Dancing Script", "cursive"
+      ],
+      Baloo2:[
+        "Baloo 2", "sans-serif"
       ]
     },
     fontSize: {

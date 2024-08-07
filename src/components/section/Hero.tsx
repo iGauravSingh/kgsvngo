@@ -88,7 +88,7 @@ const Hero = () => {
               <div className=" z-10 flex flex-col items-center h-full">
                 <div className="  w-full h-full relative">
                   <div className=" w-[500px] h-[100px] flex justify-center "></div>
-                  <h2 className={` absolute aspect-auto -top-4 left-1/2 -translate-x-1/2   bg-navcolor  text-nowrap text-4xl rounded px-14 py-6 ${img.id == 1 ? 'text-white' : 'text-white'}`}>
+                  <h2 className={` absolute aspect-auto -top-4 left-1/2 -translate-x-1/2   bg-navcolor font-sans text-nowrap text-4xl rounded px-14 py-6 ${img.id == 1 ? 'text-white' : 'text-white'}`}>
                     {img.heading}
                   </h2>
                 </div>

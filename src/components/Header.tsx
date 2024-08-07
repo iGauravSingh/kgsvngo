@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <nav>
-      <div className="  px-[35px] flex gap-4 items-center">
+      <div className="  px-[35px] flex gap-4 items-center overflow-x-clip">
         <img className=" w-[267px] h-[147px]" src="/posters/logo2.jpg" alt="" />
         <h1 className=" font-CormorantUpright text-xl md:text-4xl text-[#222] leading-7 font-[500]">
           Khushhal Gram Samaj Vikas Foundation
@@ -30,66 +30,71 @@ const Header = () => {
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
-                <Link to="/whoweare" className=" cursor-pointer">
+                <Link to="/whoweare" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                   Who are We
                 </Link>
-                <Link to="/whatkgsvabout" className=" cursor-pointer">
+                <Link to="/whatkgsvabout" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                   What's KGSV About
                 </Link>
-                <Link to="/missionvision" className=" cursor-pointer">
+                <Link to="/missionvision" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                   Mission & Vision
                 </Link>
-                <Link to="/firststeps" className=" cursor-pointer">
+                <Link to="/firststeps" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                   The First Steps
                 </Link>
                 <div className=" relative group/submenu">
-                  <div className=" flex justify-between items-center">
-                    <Link to="/" className=" cursor-pointer">
+                  <div className=" flex justify-between items-center border-b-2 border-green-100 pb-2">
+                    <Link to="/" className=" cursor-pointer  ">
                       Our Plans
                     </Link>
                     <FaAngleDown size={10} />
                   </div>
                   <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
+                  <p>
+                      <Link to="/agriculturalDevelopment" className=" cursor-pointer border-b-2 border-green-100 pb-2">
+                      Agricultural Development
+                      </Link>
+                    </p>
                     <p>
-                      <Link to="/childeducation" className=" cursor-pointer">
+                      <Link to="/childeducation" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                         Child Education
                       </Link>
                     </p>
                     <p>
-                      <Link to="/cleanliness" className=" cursor-pointer">
+                      <Link to="/cleanliness" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                         Cleanliness
                       </Link>
                     </p>
                     <p>
-                      <Link to="/child-health-nutrition" className=" cursor-pointer">
+                      <Link to="/child-health-nutrition" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                         Child Health & Nutrition
                       </Link>
                     </p>
                     <p>
-                      <Link to="/enviroment-conservation" className=" cursor-pointer">
+                      <Link to="/enviroment-conservation" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                         Environment Conservation
                       </Link>
                     </p>
                     <p>
-                      <Link to="/women-empowerment" className=" cursor-pointer">
+                      <Link to="/women-empowerment" className=" cursor-pointer ">
                         Women Empowerment
                       </Link>
                     </p>
                   </div>
                 </div>
                 <div className=" relative group/submenuteam ">
-                  <div className="flex justify-between items-center">
-                    <Link to="/" className=" cursor-pointer">
+                  <div className="flex justify-between items-center ">
+                    <Link to="/" className=" cursor-pointer b">
                       Teams
                     </Link>
                     <FaAngleDown size={10} />
                   </div>
                   <div className=" hidden group-hover/submenuteam:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2">
-                  <p><Link to="/foundingteam" className=" cursor-pointer">
+                  <p><Link to="/foundingteam" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                       Founding Team
                     </Link></p>
                     
-                    <p><Link to="/associates-mentors" className=" cursor-pointer">
+                    <p><Link to="/associates-mentors" className=" cursor-pointer border-b-2 border-green-100 pb-2">
                       Associates & Mentors
                     </Link></p>
                     
@@ -110,8 +115,8 @@ const Header = () => {
                     <FaAngleDown size={10} />
                   </div>
                   <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
-                    <p className=" cursor-pointer"><Link to='/currentyear' >Current Year</Link></p>
-                    <p className=" cursor-pointer"><Link to='/previousyears' >Previous Years</Link></p>
+                    <p className=" cursor-pointer border-b-2 border-green-100 pb-2"><Link to='/currentyear' >Current Year</Link></p>
+                    <p className=" cursor-pointer "><Link to='/previousyears' >Previous Years</Link></p>
                   </div>
                 </div>
               </div>
@@ -123,8 +128,8 @@ const Header = () => {
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
-                <p className=" cursor-pointer"><Link to='/pledge' >Pledge</Link></p>
-                <p className=" cursor-pointer"><Link to='/wish-to-associate' >Wish to Associate</Link></p>
+                <p className=" cursor-pointer border-b-2 border-green-100 pb-2"><Link to='/pledge' >Pledge</Link></p>
+                <p className=" cursor-pointer border-b-2 border-green-100 pb-2"><Link to='/wish-to-associate' >Wish to Associate</Link></p>
                 <p className=" cursor-pointer"><Link to='/donate' >Donate</Link></p>
               </div>
             </div>
@@ -135,7 +140,7 @@ const Header = () => {
             <FaAngleDown size={10} />
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48 bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
-                <p className=" cursor-pointer"><Link to='/credentials' >Credentials</Link></p>
+                <p className=" cursor-pointer border-b-2 border-green-100 pb-2"><Link to='/credentials' >Credentials</Link></p>
                 <p className=" cursor-pointer"><Link to='/annual-reports' >Annual Reports</Link></p>
               </div>
             </div>

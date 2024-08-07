@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const DonateSection = () => {
   return (
-    <div>
+    <div className=" -mb-24">
       <div className=" w-screen h-14 bg-yellow-600 text-white flex justify-center items-center gap-11">
         <p>
           Applied for Deductions under Section 80 (G) of Income Tax Act, 1961

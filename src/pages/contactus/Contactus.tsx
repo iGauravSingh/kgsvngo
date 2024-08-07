@@ -23,7 +23,7 @@ const Contactus = () => {
     <>
     <Header />
     <>
-    <div className="container mx-auto p-4 flex flex-col md:flex-row font-popins">
+    <div className=" mx-8 p-4 flex flex-col md:flex-row font-popins">
       {/* Form on the left */}
       <div className="md:w-1/2 p-4">
         <h2 className="text-2xl font-bold mb-4">Contact Us</h2>

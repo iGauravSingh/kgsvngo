@@ -8,7 +8,7 @@ const Pledge = () => {
     <Header />
 
     <>
-    <div className="container mx-auto p-4 font-popins">
+    <div className=" mx-8 p-4 font-popins">
       {/* Image with centered text */}
       <div className="relative mb-8">
         <img
@@ -17,13 +17,13 @@ const Pledge = () => {
           className="w-full h-64 object-cover brightness-90"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          {/* <h1 className="text-white text-3xl font-bold">Pledge</h1> */}
+          <h1 className="text-white text-4xl font-bold font-CormorantUpright">Pledge</h1>
         </div>
       </div>
 
       {/* Quotes Section */}
       <div className="mb-8">
-        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-cyan-500 px-2 py-2 text-justify leading-7 tracking-wide">
+        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-green-900 px-2 py-2 text-justify leading-7 tracking-wide">
           "KGSV Foundation aims to build a few model villages. This requires support & cooperation from everyone, no matter how small the contribution. It would be a privilege to have you associate with us. We could begin the journey, by taking a small pledge on some key issues that we all believe in. This will be a very significant first step, towards realizing our goals."
         </blockquote>
       </div>
@@ -33,7 +33,7 @@ const Pledge = () => {
       {/* Paragraph with List Elements */}
       <div className="mb-12 flex justify-center mt-12">
         
-        <ul className="list-disc list-inside pl-4 text-gray-800 space-y-5 text-base text-justify leading-7 tracking-wide">
+        <ul className="list-disc list-inside pl-4 text-gray-800 space-y-5 text-base text-justify leading-7 tracking-wide font-CormorantUpright text-lg font-semibold">
           <li>to conserve water and take special care to save while I drink, clean , wash or bathe at home or in any public place.</li>
           <li>to maintain purity of air - take care to minimize burning of any material that contaminates or releases toxic gases into the environment</li>
           <li>to 'cleanliness of public places'. Will carry garbage bag & bring home my litter & garbage. Will use public-bins only if clean & maintained</li>
@@ -45,7 +45,7 @@ const Pledge = () => {
       </div>
 
       {/* Notification at the Bottom */}
-      <div className=" inset-x-0 p-4 bg-cyan-500 text-white text-center mb-12 leading-7 tracking-wide">
+      <div className=" inset-x-0 p-4 bg-green-800 text-white text-center mb-12 leading-7 tracking-wide">
         <p>We also invite you to associate with the KGSV Foundation and further its cause in other ways, outlined here</p>
       </div>
     </div>

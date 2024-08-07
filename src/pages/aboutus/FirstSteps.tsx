@@ -8,7 +8,7 @@ const FirstSteps = () => {
     <>
     <Header />
     <>
-    <div className="container mx-auto font-popins text-justify">
+    <div className=" mx-8 font-popins text-justify ">
       {/* Image on top with text */}
       <div className="relative w-full h-64">
         <img
@@ -17,7 +17,7 @@ const FirstSteps = () => {
           className="object-cover w-full h-full brightness-90"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-3xl font-bold">First Steps Little Steps</span>
+          <span className="text-white text-4xl font-bold font-CormorantUpright">Begining of journey</span>
         </div>
       </div>
       

@@ -13,7 +13,7 @@ const Donate = () => {
       <Header />
 
       <>
-        <div className="container mx-auto p-4 font-popins">
+        <div className=" mx-8 p-4 font-popins">
           {/* Hero Section */}
           <div className="relative mb-8">
             <img
@@ -22,28 +22,35 @@ const Donate = () => {
               className="w-full h-64 object-cover object-top brightness-90"
             />
             <div className="absolute inset-0 flex items-center justify-center">
-              <h1 className="text-white text-3xl font-bold">
+              <h1 className="text-white text-4xl font-bold font-CormorantUpright">
                 Support Our Cause
               </h1>
             </div>
           </div>
 
           {/* About Section */}
-          <div className="mb-8">
-            <h2 className="text-xl font-bold mb-4 text-center leading-9 tracking-wide">
+          <div className=" mb-4">
+            <div className=" flex justify-center  gap-12">
+            <h2 className="text-2xl font-bold mb-4 text-center leading-9 tracking-wide">
               Thank you for considering a donation to the KGSV Foundation
             </h2>
-            <p className="text-lg text-gray-800 mb-4 text-center leading-7 tracking-wide">
+            <button className=" px-5 py-3 bg-ngodark text-slate-50 text-lg rounded-lg hover:bg-greenngo">
+              <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==" target="_blank">
+                Donate
+              </a>
+            </button>
+            </div>
+            <p className=" ml-8 text-base text-gray-800 mt-9 ">
               The Foundation accepts financial support for carrying out welfare
-              work in Indian villages
+              work in Indian villages.
             </p>
           </div>
 
-          <p className=" text-xl leading-7 tracking-wide ml-8">
+          <p className=" text-lg ml-8 font-CormorantUpright font-bold">
             The following may kindly be noted:
           </p>
 
-          <ul className=" list-disc text-justify mx-24 mt-8 space-y-4 tracking-wide leading-6 text-lg">
+          <ul className=" list-disc text-justify mx-24 mt-8 space-y-4  text-xl font-semibold font-CormorantUpright">
             <li>
               Donations are accepted only through on-line transfers to the
               'Khushhal Gram Samaj Vikas Foundation' Current Account Nos.
@@ -67,19 +74,19 @@ const Donate = () => {
             </li>
           </ul>
 
-          <div className=" flex mt-16 justify-between items-center mx-24">
-            <button className=" px-5 py-3 bg-ngodark text-slate-50 text-lg rounded-lg hover:bg-greenngo">
-              <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==">
+          <div className=" flex mt-16 justify-end items-center mx-24">
+            {/* <button className=" px-5 py-3 bg-ngodark text-slate-50 text-lg rounded-lg hover:bg-greenngo">
+              <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==" target="_blank">
                 Donate
               </a>
-            </button>
+            </button> */}
             <p className="text-lg">
               KGSV Foundation thanks you for your kind patronage
             </p>
           </div>
 
           {/* Notification Section */}
-          <div className="fixed bottom-0 inset-x-0 p-2 bg-green-500 text-white text-center">
+          <div className="fixed bottom-0 inset-x-0 p-2 bg-green-800 text-white text-center">
             <p>Your support makes a big difference. Thank you!</p>
           </div>
         </div>

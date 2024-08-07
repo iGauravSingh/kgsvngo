@@ -8,7 +8,7 @@ const WishToAssociate = () => {
     <Header />
 
     <>
-    <div className="container mx-auto p-4 font-popins">
+    <div className=" mx-8 p-4 font-popins">
       {/* Image with centered text */}
       <div className="relative mb-8">
         <img
@@ -17,13 +17,13 @@ const WishToAssociate = () => {
           className="w-full h-64 object-cover brightness-90"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          {/* <h1 className="text-white text-3xl font-bold">Wish To Associate</h1> */}
+          <h1 className="text-white text-4xl font-bold font-CormorantUpright">Associate with us</h1>
         </div>
       </div>
 
       {/* Quotes Section */}
       <div className="mb-8">
-        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-cyan-500 px-2 py-2 text-justify">
+        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-green-800 px-2 py-2 text-justify">
         "We are a start-up organisation and are in process of building a team & partners. We require help for our Projects in Rural India in field of - education, garbage management, health & nutrition, clean & green environment, agriculture, women empowerment, skills in creating job opportunities & helping a sustainable living. Your knowledge, expertise & passion would be an asset in realising our goals.""
         </blockquote>
       </div>
@@ -31,11 +31,11 @@ const WishToAssociate = () => {
       <div className=" flex flex-col justify-center items-center gap-7 text-lg">
       <p>Thank you for considering an association with KGSV Foundation. </p>
 
-<p>Kindly mail us the information requested below and we will get in touch with you.</p>
+<p className=" text-base">Kindly mail us the information and we will get in touch with you.</p>
       </div>
 
      <div className=" flex justify-center mt-8 mb-10">
-     <form className="space-y-4 sm:w-[300px] md:w-[500px] lg:w-[600px] bg-cyan-100 px-9 py-8 rounded-lg">
+     <form className="space-y-4 sm:w-[300px] md:w-[500px] lg:w-[600px] bg-green-100 px-9 py-8 rounded-lg">
       <h1 className=" text-center text-3xl font-semibold font-DancingScript">Associate Form</h1>
               <div>
                 <label className="block  text-sm font-bold mb-2 text-greenngo" htmlFor="name">

@@ -15,7 +15,7 @@ const topScorers = [
   
   const Notification = () => (
     <div className="bg-yellow-100 border-l-4 border-r-4 border-yellow-500 text-yellow-700 p-4 mb-4 text-center" role="alert">
-      <p>U.P Board High School Result</p>
+      <p>U.P High School Exam Results - 2024</p>
     </div>
   );
 

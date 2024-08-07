@@ -8,12 +8,12 @@ const Credentials = () => {
     <Header />
 
     <>
-    <div className="App font-popins">
+    <div className=" font-popins">
       {/* Full screen image with text on top */}
       <div className="relative w-full h-64 bg-cover bg-center" style={{ backgroundImage: "url('/img/eleven.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold">Our Credentials</h1>
+          <h1 className="text-white text-4xl font-bold font-CormorantUpright">Our Credentials</h1>
         </div>
       </div>
 

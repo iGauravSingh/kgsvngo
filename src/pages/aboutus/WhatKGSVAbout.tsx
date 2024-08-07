@@ -6,7 +6,7 @@ const WhatKGSVAbout = () => {
   return (
     <>
       <Header />
-      <div className="App font-popins">
+      <div className="mx-8 font-popins">
         {/* Full screen image */}
         <div
           className="relative w-full h-[256px] bg-cover bg-center"
@@ -14,12 +14,12 @@ const WhatKGSVAbout = () => {
         >
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-white text-4xl font-bold">What's KGSV About</h1>
+            <h1 className="text-white text-4xl font-bold font-CormorantUpright">What's KGSV About</h1>
           </div>
         </div>
 
         {/* Paragraph at the bottom */}
-        <div className="flex flex-col items-center justify-center p-8">
+        <div className="flex flex-col items-center justify-center py-8">
           <p className="text-gray-700 leading-7 tracking-wide text-justify">
             India is home to some 650,000 villages where 70% of its people live,
             contributing to 17-20% of the economy. Mahatma Gandhi once said,

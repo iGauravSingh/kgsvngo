@@ -32,6 +32,7 @@ import Gallery from './pages/gallery/Gallery.tsx';
 import Videos from './pages/videos/Videos.tsx';
 import Contactus from './pages/contactus/Contactus.tsx';
 import RememberingGurudev from './pages/aboutus/RememberingGurudev.tsx';
+import AgriculturalDevelopment from './pages/aboutus/ourplans/AgriculturalDevelopment.tsx';
 
 
 
@@ -46,6 +47,7 @@ const router = createBrowserRouter(
       {/* <Route path='/teams' element={<WhoAreWe />} /> */}
       {/* <Route path='/ourplans' element={<WhoAreWe />} /> */}
 
+      <Route path='/agriculturalDevelopment' element={<AgriculturalDevelopment />} />
       <Route path='/childeducation' element={<ChildEducation />} />
       <Route path='/cleanliness' element={<Cleanliness />} />
       <Route path='/child-health-nutrition' element={<ChildHealthNutrition />} />

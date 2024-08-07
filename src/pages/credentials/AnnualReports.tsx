@@ -15,7 +15,7 @@ const AnnualReports = () => {
     <>
     <Header />
     <>
-    <div className="container mx-auto p-4 font-popins">
+    <div className=" mx-8 p-4 font-popins">
       <div className="relative">
         <img
           src="/img/eleven.jpg"
@@ -23,14 +23,14 @@ const AnnualReports = () => {
           className="w-full h-64 object-cover brightness-90"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-3xl font-bold">Financial Reports</h1>
+          <h1 className="text-white text-4xl font-bold font-CormorantUpright">Financial Reports</h1>
         </div>
       </div>
       
 
       <div className="relative overflow-x-auto shadow-md sm:rounded-lg mt-10 mb-11">
     <table className="w-full text-sm text-left rtl:text-right text-gray-500 ">
-        <thead className="text-lg text-green-700 uppercase bg-green-400 ">
+        <thead className="text-lg text-yellow-700 uppercase bg-yellow-200 ">
             <tr>
                 <th scope="col" className="px-6 py-3">
                 Financial Reports
@@ -47,7 +47,7 @@ const AnnualReports = () => {
         </thead>
         <tbody>
             {CredentialData.map((item)=> (
-              <tr className="bg-green-100 border-b  hover:bg-green-200  text-green-900 font-medium">
+              <tr className="bg-yellow-100 border-b  hover:bg-yellow-400  text-yellow-900 font-medium">
               <th scope="row" className="px-6 py-4 font-medium  whitespace-nowrap cursor-pointer">
                   {item.fr}
               </th>
