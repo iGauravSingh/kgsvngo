@@ -1,8 +1,8 @@
 
 const Footer = () => {
     return (
-      <footer className=" bg-greensyn text-white py-8 font-popins mt-24">
-        <div className="w-screen  px-4 sm:px-6 lg:px-8">
+      <footer className="w-screen bg-greensyn text-white py-8 font-popins mt-24">
+        <div className="w-full  px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap -mx-4">
             <div className="w-full md:w-1/3 px-4">
               <h2 className="text-lg font-bold mb-4">Contact Us</h2>
