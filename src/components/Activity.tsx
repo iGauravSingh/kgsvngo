@@ -30,7 +30,7 @@ const Activity = () => {
       <div className=" font-popins pt-7 mb-10">
       {/* heading  */}
       <div className=" flex flex-col items-center">
-        <h2 className=" text-3xl text-ngodark font-bold text-wrap">Wish to know more</h2>
+        <h2 className=" text-4xl text-ngodark font-bold text-wrap font-CormorantUpright">Wish to know more</h2>
           <p className=" text-ngodark text-md md:text-lg mt-4 text-wrap text-center">Visit KGSV onsite.</p>
         {/* <p className=" text-greenngo">Gifts of any kind during visits are discouraged</p> */}
         
@@ -41,7 +41,7 @@ const Activity = () => {
       {/* Classes for children */}
       <div className=" mt-4 ">
       {/* <h3 className=" text-xl text-greenngo text-center font-bold">Ongoing Activitys</h3> */}
-        <h4 className=" text-lg text-ngodark font-semibold mb-2 mt-6">Mentoring classes of Children </h4>
+        <h4 className=" text-2xl text-ngodark font-semibold mb-2 mt-6 font-CormorantUpright">Mentoring classes of Children </h4>
         <div className=" flex justify-center">
         <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {classesData.map((item) => (
@@ -53,7 +53,7 @@ const Activity = () => {
 
       {/* upcoming Events  */}
       <div className=" mt-5">
-        <h3 className=" text-xl font-bold mb-2">Upcoming Events</h3>
+        <h3 className=" text-2xl font-bold mb-2 font-CormorantUpright">Upcoming Events</h3>
         <div className=" flex justify-center">
         <div className=" grid grid-cols-1 md:grid-cols-2 gap-8">
         {upcomingEvents.map((item)=> (

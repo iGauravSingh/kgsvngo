@@ -101,7 +101,7 @@ const Zig = () => {
   return (
     <div className=" pb-7 font-popins overflow-clip flex justify-center  ">
       <div className="  mx-8 my-8">
-        <h2 className=" text-center text-4xl text-greenngo font-Roboto">
+        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">
           What does KGSV(केजस्वी) do ?
         </h2>
         {items.map((item) => (
@@ -109,7 +109,7 @@ const Zig = () => {
             key={item.id}
             className=" mt-7  flex flex-col justify-center items-center"
           >
-            <h2 className=" font-medium text-[33px] text-greenngo">
+            <h2 className=" font-medium text-[33px] text-greenngo font-CormorantUpright">
               {item.title}
             </h2>
             <div className=" relative flex flex-col lg:flex-row lg:justify-between lg:gap-6 items-center ">
@@ -161,7 +161,7 @@ const Zig = () => {
             key={item.id}
             className=" mt-7  flex flex-col justify-center items-center"
           >
-            <h2 className=" font-medium text-[33px] text-greenngo">
+            <h2 className=" font-medium text-[33px] text-greenngo font-CormorantUpright">
               {item.title}
             </h2>
             <div className=" relative flex flex-col lg:flex-row lg:justify-between lg:gap-6 items-center ">

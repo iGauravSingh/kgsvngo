@@ -69,7 +69,7 @@ const topScorers = [
       <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
       <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
         <div>
-        <h1 className="text-2xl sm:text-xl lg:text-2xl font-semibold text-center mb-6 text-greenngo">
+        <h1 className="text-3xl sm:text-2xl lg:text-3xl font-semibold text-center mb-6 text-greenngo font-CormorantUpright">
           
           KGSV Congratulates its Stars 
           
