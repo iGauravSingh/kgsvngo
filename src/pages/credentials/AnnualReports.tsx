@@ -18,12 +18,12 @@ const AnnualReports = () => {
     <div className=" mx-8 p-4 font-popins">
       <div className="relative">
         <img
-          src="/img/eleven.jpg"
+          src="/originalpagesimages/annualreport.jpg"
           alt="Financial Report"
-          className="w-full h-64 object-cover brightness-90"
+          className="w-full h-64 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold font-CormorantUpright">Financial Reports</h1>
+          {/* <h1 className="text-white text-4xl font-bold font-CormorantUpright">Financial Reports</h1> */}
         </div>
       </div>
       

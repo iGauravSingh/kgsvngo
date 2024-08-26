@@ -9,8 +9,9 @@ import Support from '../../components/Support'
 import Achivers from '../../components/Achivers'
 import Footer from '../../components/Footer'
 import DonateSection from '../../components/DonateSection'
-import News from '../../components/News'
+// import News from '../../components/News'
 import DonateSectionUpper from '../../components/DonateSectionUpper'
+import Vasudev from '../../components/Vasudev'
 
 const Homepage = () => {
   return (
@@ -19,13 +20,14 @@ const Homepage = () => {
       <Header />
       <main className="">
         <div className="z-10">
+          <Vasudev />
           <Hero />
           
         </div>
         <VideoCarousel />
         <Tagline />
         <DonateSectionUpper />
-        <News />
+        
         <Zig />
         <div className="">
           <Activity />

@@ -10,11 +10,11 @@ const WhatKGSVAbout = () => {
         {/* Full screen image */}
         <div
           className="relative w-full h-[256px] bg-cover bg-center"
-          style={{ backgroundImage: "url('/img/five.jpg')" }}
+          style={{ backgroundImage: "url('/originalpagesimages/whatskgsvabout.jpg')" }}
         >
-          <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="absolute inset-0 flex items-center justify-center">
-            <h1 className="text-white text-4xl font-bold font-CormorantUpright">What's KGSV About</h1>
+          {/* <div className="absolute inset-0 bg-black opacity-50"></div> */}
+          <div className="absolute inset-0 flex items-center text-justify">
+            {/* <h1 className="text-white text-4xl font-bold font-CormorantUpright">What's KGSV About</h1> */}
           </div>
         </div>
 

@@ -53,9 +53,9 @@ const FoundingTeam = () => {
           {/* Image with centered text */}
           <div className="relative mb-8">
             <img
-              src="/img/five.jpg"
+              src="/originalpagesimages/team.jpg"
               alt="Descriptive Alt Text"
-              className="w-full h-64 object-cover brightness-90"
+              className="w-full h-64 object-cover"
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <h1 className="text-white text-4xl font-bold font-CormorantUpright">Founding Team</h1>
@@ -117,7 +117,7 @@ const FoundingTeam = () => {
 
           <div className=" mt-8">
             <h2 className=" text-2xl font-semibold text-greenngo">
-              Founding Members
+              Founder Members
             </h2>
 
             <div className=" grid grid-cols-1 md:grid-cols-2 gap-8 mt-10">

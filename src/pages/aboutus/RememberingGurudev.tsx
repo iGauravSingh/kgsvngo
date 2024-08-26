@@ -20,7 +20,7 @@ return (
 
 
         {/* left gif */}
-      <div className="  w-[33%]">
+      <div className="  w-[33%] hidden md:block">
         <div className=" space-y-96">
         <div className=" flex justify-center mt-16">
         <img className=" w-32 transform scale-x-[-1] animate-pigin-move" src="/pages/aboutus/dove.png" alt="dove" />
@@ -36,7 +36,7 @@ return (
       <div className=" bg-white p-8 mt-4 mx-auto max-w-2xl rounded-lg shadow-lg">
         
         <h2 className="text-2xl font-bold text-center mb-4">Invoking Gurudev</h2>
-        <p className="text-gray-700 text-base leading-relaxed flex flex-col items-center gap-4 text-lg">
+        <p className="text-gray-700 leading-relaxed flex flex-col items-center gap-4 text-base md:text-lg text-justify text-nowrap">
           <span>Where the mind is without fear</span>
           <span>and the head is held high</span>
           <span>Where knowledge is free</span>
@@ -58,7 +58,7 @@ return (
       </div>
 
       {/* right gif  */}
-      <div className="  w-[33%]">
+      <div className="  w-[33%] hidden md:block">
         <div className=" space-y-96">
         <div className=" flex justify-center mt-16">
         <img className=" w-32 animate-pigin-move " src="/pages/aboutus/dove.png " alt="dove" />

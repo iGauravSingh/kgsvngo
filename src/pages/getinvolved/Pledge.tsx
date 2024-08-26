@@ -12,9 +12,9 @@ const Pledge = () => {
       {/* Image with centered text */}
       <div className="relative mb-8">
         <img
-          src="/img/five.jpg"
+          src="/originalpagesimages/pledge.jpeg"
           alt="Descriptive Alt Text"
-          className="w-full h-64 object-cover brightness-90"
+          className="w-full h-64 object-cover "
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1 className="text-white text-4xl font-bold font-CormorantUpright">Pledge</h1>
@@ -23,7 +23,7 @@ const Pledge = () => {
 
       {/* Quotes Section */}
       <div className="mb-8">
-        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-green-900 px-2 py-2 text-justify leading-7 tracking-wide">
+        <blockquote className="text-xl italic font-semibold text-slate-800 rounded-lg bg-[#CEDF9F] px-2 py-2 text-justify leading-7 tracking-wide">
           "KGSV Foundation aims to build a few model villages. This requires support & cooperation from everyone, no matter how small the contribution. It would be a privilege to have you associate with us. We could begin the journey, by taking a small pledge on some key issues that we all believe in. This will be a very significant first step, towards realizing our goals."
         </blockquote>
       </div>
@@ -45,7 +45,7 @@ const Pledge = () => {
       </div>
 
       {/* Notification at the Bottom */}
-      <div className=" inset-x-0 p-4 bg-green-800 text-white text-center mb-12 leading-7 tracking-wide">
+      <div className=" inset-x-0 p-4 bg-[#CEDF9F] text-slate-800 text-center mb-12 leading-7 tracking-wide">
         <p>We also invite you to associate with the KGSV Foundation and further its cause in other ways, outlined here</p>
       </div>
     </div>

@@ -23,6 +23,7 @@ const Header = () => {
 
       {/* big menu  */}
       <div className=" hidden md:block">
+        
         <div className=" w-screen h-[60px] flex justify-end items-center gap-8 px-[35px] font-Roboto">
           <p className=" cursor-pointer"><Link to="/">Home</Link></p>
           <div className=" relative group flex gap-1 items-center">
@@ -145,11 +146,12 @@ const Header = () => {
               </div>
             </div>
           </div>
-
+          <p className=" cursor-pointer"><Link to='/donate' >Donate</Link></p>
           <p className=" cursor-pointer"><Link to='/gallery' >Gallery</Link></p>
           <p className=" cursor-pointer"><Link to='/video' >Videos</Link> </p>
           <p className=" cursor-pointer"><Link to='/contact' >Contact us</Link></p>
         </div>
+        <div className=" border border-opacity-5 border-green-950 w-screen"></div>
       </div>
 
       {/* small menu  */}

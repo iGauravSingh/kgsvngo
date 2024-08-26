@@ -14,7 +14,7 @@ const items = [
   {
     id: 2,
     image: "/zig/new/clean.jpg",
-    title: "Cleaniness",
+    title: "Cleanliness",
     qoutes: "Cleanliness is the hallmark of civilization - Unknown ",
     text: "Promoting cleanliness in the villages is a KGSV priority and integral part of our program. The children, the parents & villagers are educated in personal hygiene and ensuring that they keep their surrounding clean. Under guidance of Mentors, cleanliness drives are undertaken in villages, with children carrying placards, delivering speeches on the importance of cleanliness for health & welfare of all. Our effort to reach out to local primary schools has received enthusiastic support and active participation from school teachers & children.  KGSV children are driving the change. ",
   },
@@ -102,8 +102,9 @@ const Zig = () => {
     <div className=" pb-7 font-popins overflow-clip flex justify-center  ">
       <div className="  mx-8 my-8">
         <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">
-          What does KGSV(केजस्वी) do ?
+          KGSV(केजस्वी) - An endeavour to fullfill rural aspirations & create Model villages.
         </h2>
+        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">Our Work -- ?</h2>
         {items.map((item) => (
           <div
             key={item.id}

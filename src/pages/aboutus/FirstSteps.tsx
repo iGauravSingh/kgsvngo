@@ -12,12 +12,12 @@ const FirstSteps = () => {
       {/* Image on top with text */}
       <div className="relative w-full h-64">
         <img
-          src="/img/seven.jpg"
+          src="/originalpagesimages/firstlittlesteps.jpg"
           alt="Top Image"
-          className="object-cover w-full h-full brightness-90"
+          className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-4xl font-bold font-CormorantUpright">Begining of journey</span>
+          {/* <span className="text-white text-4xl font-bold font-CormorantUpright">Begining of journey</span> */}
         </div>
       </div>
       

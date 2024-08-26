@@ -12,18 +12,18 @@ const WishToAssociate = () => {
       {/* Image with centered text */}
       <div className="relative mb-8">
         <img
-          src="/img/five.jpg"
+          src="/originalpagesimages/wishtoassociate.jpg"
           alt="Descriptive Alt Text"
-          className="w-full h-64 object-cover brightness-90"
+          className="w-full h-64 object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-white text-4xl font-bold font-CormorantUpright">Associate with us</h1>
+          {/* <h1 className="text-white text-4xl font-bold font-CormorantUpright">Associate with us</h1> */}
         </div>
       </div>
 
       {/* Quotes Section */}
       <div className="mb-8">
-        <blockquote className="text-xl italic font-semibold text-slate-100 rounded-lg bg-green-800 px-2 py-2 text-justify">
+        <blockquote className="text-xl italic font-semibold bg-[#CEDF9F] text-slate-800 rounded-lg  px-2 py-2 text-justify">
         "We are a start-up organisation and are in process of building a team & partners. We require help for our Projects in Rural India in field of - education, garbage management, health & nutrition, clean & green environment, agriculture, women empowerment, skills in creating job opportunities & helping a sustainable living. Your knowledge, expertise & passion would be an asset in realising our goals.""
         </blockquote>
       </div>

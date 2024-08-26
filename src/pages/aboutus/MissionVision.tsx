@@ -10,7 +10,7 @@ const MissionVision = () => {
       {/* Image on top with text */}
       <div className="relative w-full h-64">
         <img
-          src="/img/seven.jpg"
+          src="/originalpagesimages/visionmission-1.jpg"
           alt="Top Image"
           className="object-cover w-full h-full"
         />
