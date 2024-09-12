@@ -34,7 +34,7 @@ const Donate = () => {
             <h2 className="text-2xl font-bold mb-4 text-center leading-9 tracking-wide">
               Support Our Cause
             </h2>
-            <button className=" absolute right-16 px-5 py-3 bg-ngodark text-slate-50 text-lg rounded-lg hover:bg-greenngo">
+            <button className=" absolute right-16 px-5 py-3 bg-greenngo text-slate-50 text-lg rounded-lg hover:bg-greenngo">
               <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==" target="_blank">
                 Donate
               </a>

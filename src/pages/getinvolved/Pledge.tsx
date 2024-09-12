@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 
@@ -46,7 +47,7 @@ const Pledge = () => {
 
       {/* Notification at the Bottom */}
       <div className=" inset-x-0 p-4 bg-[#CEDF9F] text-slate-800 text-center mb-12 leading-7 tracking-wide">
-        <p>We also invite you to associate with the KGSV Foundation and further its cause in other ways, outlined here</p>
+        <p>We also invite you to associate with the KGSV Foundation and further its cause in other ways, outlined <Link className=" underline text-lg text-bold" to="/wish-to-associate">here</Link></p>
       </div>
     </div>
     </>

@@ -71,7 +71,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=" w-screen relative overflow-clip bg-white ">
+    <div className=" w-screen h-[600px] relative overflow-clip bg-white ">
       <div className="relative w-screen h-screen overflow-hidden">
         <div className=" w-full flex justify-center items-center">
           {images.map((img, index) => (

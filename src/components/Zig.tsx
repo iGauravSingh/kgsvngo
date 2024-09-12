@@ -104,7 +104,7 @@ const Zig = () => {
         <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">
           KGSV(केजस्वी) - An endeavour to fullfill rural aspirations & create Model villages.
         </h2>
-        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">Our Work -- ?</h2>
+        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">Our Work</h2>
         {items.map((item) => (
           <div
             key={item.id}

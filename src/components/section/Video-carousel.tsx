@@ -27,7 +27,7 @@ const SmallVideoCarousel = ({ movies }: { movies: Movie[] }) => {
       <div className="animate-carousel-move relative left-[var(--carousel-offset,0px)] flex">
         {movies.map((movie, index) => (
           <div
-            className="aspect-video w-[30vw] shrink-0 md:w-[15vw]"
+            className="aspect-video w-[30vw] shrink-0 md:w-[20vw]"
             key={`${movie.name}-${index}`}
           >
             <img
