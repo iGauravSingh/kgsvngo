@@ -15,7 +15,7 @@ const MissionVision = () => {
           className="object-cover w-full h-full"
         />
         <div className="absolute inset-0 flex items-center justify-center">
-          <span className="text-white text-4xl font-bold font-CormorantUpright">Mission And Vision</span>
+          {/* <span className="text-white text-4xl font-bold font-CormorantUpright">Mission And Vision</span> */}
         </div>
       </div>
 

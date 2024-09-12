@@ -33,6 +33,7 @@ import Videos from './pages/videos/Videos.tsx';
 import Contactus from './pages/contactus/Contactus.tsx';
 import RememberingGurudev from './pages/aboutus/RememberingGurudev.tsx';
 import AgriculturalDevelopment from './pages/aboutus/ourplans/AgriculturalDevelopment.tsx';
+import AreasOfWork from './pages/aboutus/ourplans/AreasOfWork.tsx';
 
 
 
@@ -46,7 +47,7 @@ const router = createBrowserRouter(
       <Route path='/remembering-gurudev' element={<RememberingGurudev />} />
       {/* <Route path='/teams' element={<WhoAreWe />} /> */}
       {/* <Route path='/ourplans' element={<WhoAreWe />} /> */}
-
+      <Route path='/ourplans' element={<AreasOfWork />} />
       <Route path='/agriculturalDevelopment' element={<AgriculturalDevelopment />} />
       <Route path='/childeducation' element={<ChildEducation />} />
       <Route path='/cleanliness' element={<Cleanliness />} />

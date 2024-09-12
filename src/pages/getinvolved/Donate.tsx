@@ -13,7 +13,7 @@ const Donate = () => {
       <Header />
 
       <>
-        <div className=" mx-8 p-4 font-popins">
+        <div className=" mx-1 md:mx-8 md:p-4 font-popins mt-2">
           {/* Hero Section */}
           <div className="relative mb-8">
             <img
@@ -29,16 +29,24 @@ const Donate = () => {
           </div>
 
           {/* About Section */}
-          <div className=" relative mb-4">
-            <div className=" flex justify-center  gap-12">
-            <h2 className="text-2xl font-bold mb-4 text-center leading-9 tracking-wide">
+          <div className=" relative md:mb-4">
+            <div className=" flex flex-col md:flex-row justify-center  gap-12">
+            <h2 className="text-2xl font-bold md:mb-4 text-center leading-9 tracking-wide">
               Support Our Cause
             </h2>
-            <button className=" absolute right-16 px-5 py-3 bg-greenngo text-slate-50 text-lg rounded-lg hover:bg-greenngo">
+            
+            <button className=" hidden md:block absolute right-16 px-5 py-3 bg-greenngo text-slate-50 text-lg rounded-lg hover:bg-greenngo">
               <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==" target="_blank">
                 Donate
               </a>
             </button>
+            <div className=" flex justify-center items-center">
+            <button className=" md:hidden w-32 px-5 py-3 bg-greenngo text-slate-50 text-lg rounded-lg hover:bg-greenngo">
+              <a href="https://eazypay.icicibank.com/eazypayLink?P1=5DGWtEPDCz2jwYGzLvK88g==" target="_blank">
+                Donate
+              </a>
+            </button>
+            </div>
             </div>
             <p className=" ml-8 text-base text-gray-800 mt-9 ">
               The Foundation accepts financial support for carrying out welfare
