@@ -63,12 +63,12 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4">Social Links</h3>
           <ul className="space-y-2">
             <li>
-              <a href="http://twitter.com/kgsvfoundation" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
+              <a href="https://www.instagram.com/kgsv_ngo/"  target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
                 <FaInstagram className="mr-2" /> Instagram
               </a>
             </li>
             <li>
-              <a href="https://www.instagram.com/kgsv_ngo/" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
+              <a href="http://twitter.com/kgsvfoundation" target="_blank" rel="noopener noreferrer" className="hover:text-white flex items-center">
                 <FaTwitter className="mr-2" /> Twitter
               </a>
             </li>

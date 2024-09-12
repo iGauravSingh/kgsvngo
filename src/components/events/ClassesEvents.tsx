@@ -15,7 +15,7 @@ interface ClassEventProps {
 
 const ClassesEvents = ({ desc, address, mentor, phone}: ClassEventProps) => {
   return (
-    <div className=" w-[405px] h-[185px] gap-10 items-center my-4  bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-x hover:bg-green-950 ease-in-out duration-1000 rounded-2xl group">
+    <div className=" lg:w-[405px] h-[185px] gap-10 items-center my-4  bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-x hover:bg-green-950 ease-in-out duration-1000 rounded-2xl group">
         {/* logo on left  */}
         
         {/* Event Card  */}

@@ -1,4 +1,4 @@
-
+import { RiDoubleQuotesL } from "react-icons/ri";
 
 import { motion } from "framer-motion";
 
@@ -97,14 +97,22 @@ const boxVariant2 = {
   },
 };
 
+
+
 const Zig = () => {
+
   return (
-    <div className=" pb-7 font-popins overflow-clip flex justify-center  ">
+    <div className=" pb-7 font-popins flex justify-center overflow-x-hidden ">
       <div className="  mx-8 my-8">
-        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">
-          KGSV(केजस्वी) - An endeavour to fullfill rural aspirations & create Model villages.
+      
+      <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright text-nowrap">
+      KGSV <span className=" text-xl md:text-3xl">(केजस्वी)</span>
         </h2>
-        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright">Our Work</h2>
+        <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright mt-2">
+          <span>An endeavour to fullfill rural aspirations</span> <span>& create Model villages.</span>
+            
+        </h2>
+        <h2 className=" text-center text-4xl text-greenngo font-CormorantUpright mt-5">Our Work</h2>
         {items.map((item) => (
           <div
             key={item.id}
@@ -116,10 +124,12 @@ const Zig = () => {
             <div className=" relative flex flex-col lg:flex-row lg:justify-between lg:gap-6 items-center ">
               
               {/* Qoutes and text container  */}
-              <div className=" mt-5 ">
+              <div className=" mt-5 max-w-[600px] ">
+
                 {/* Qoutes  */}
+                <div className=" hidden md:block opacity-50"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
                 <div className=" hidden md:block  ">
-                  <p className=" px-2 font-DancingScript text-4xl w-[500px] text-ngodark font-semibold">
+                  <p className=" px-2 font-DancingScript text-3xl text-ngodark font-semibold">
                     {item.qoutes}
                   </p>
                 </div>
@@ -128,9 +138,9 @@ const Zig = () => {
                   variants={boxVariant2}
                   initial="hidden"
                   whileInView="show"
-                  className=" w-[400px] md:w-[500px] lg:w-[550px]  mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
+                  className="    mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
                 >
-                  <p className=" text-justify">{item.text}</p>
+                  <p className=" text-justify text-sm md:text-base px-1 sm:px-0">{item.text}</p>
                 </motion.div>
               </div>
               
@@ -142,10 +152,10 @@ const Zig = () => {
                 variants={boxVariant}
                 initial="hidden"
                 whileInView="show"
-                className=" w-[400px] md:w-[500px] lg:w-[550px] h-[350px] rounded-3xl overflow-clip "
+                className=" w-[400px]  xl:w-[550px] h-[350px] rounded-3xl  "
               >
                 <img
-                  className=" w-full h-full object-cover"
+                  className=" w-full h-full object-cover rounded-3xl"
                   src={item.image}
                   alt={item.title}
                 />
@@ -156,7 +166,6 @@ const Zig = () => {
         ))}
 
         {/* rural prosperity section  */}
-
         {ruralprospdata.map((item) => (
           <div
             key={item.id}
@@ -168,11 +177,13 @@ const Zig = () => {
             <div className=" relative flex flex-col lg:flex-row lg:justify-between lg:gap-6 items-center ">
               
               {/* Qoutes and text container  */}
-              <div className=" mt-5 ">
+              <div className=" mt-5 max-w-[600px] ">
+
                 {/* Qoutes  */}
+                <div className=" hidden md:block opacity-50"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
                 <div className=" hidden md:block  ">
-                  <p className=" px-2 font-DancingScript text-4xl w-[500px] text-ngodark font-semibold">
-                    {item.qoutes} <span className="text-3xl">-KGSV</span>
+                  <p className=" px-2 font-DancingScript text-3xl text-ngodark font-semibold">
+                    {item.qoutes}
                   </p>
                 </div>
                 {/* text on right  */}
@@ -180,9 +191,9 @@ const Zig = () => {
                   variants={boxVariant2}
                   initial="hidden"
                   whileInView="show"
-                  className=" w-[400px] md:w-[500px] lg:w-[550px]  mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
+                  className="    mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
                 >
-                  <p className=" text-justify">{item.text}</p>
+                  <p className=" text-justify text-sm md:text-base px-1 sm:px-0">{item.text}</p>
                 </motion.div>
               </div>
               
@@ -194,10 +205,10 @@ const Zig = () => {
                 variants={boxVariant}
                 initial="hidden"
                 whileInView="show"
-                className=" w-[400px] md:w-[500px] lg:w-[550px] h-[350px] rounded-3xl overflow-clip "
+                className="  w-[400px]  xl:w-[550px] h-[350px] rounded-3xl    "
               >
                 <img
-                  className=" w-full h-full object-cover"
+                  className=" w-full h-full object-cover rounded-3xl"
                   src={item.image}
                   alt={item.title}
                 />
@@ -206,6 +217,8 @@ const Zig = () => {
             </div>
           </div>
         ))}
+
+        
       </div>
     </div>
   );

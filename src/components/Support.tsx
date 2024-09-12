@@ -10,7 +10,7 @@ const supportArray = ["Education","Cleanliness","Health","Environment","Women Em
 
 const Support = () => {
     return (
-      <div className="">
+      <div className=" overflow-x-hidden">
         <div className="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 font-popins ">
           <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-6 text-greenngo font-CormorantUpright">
           KGSV needs support / volunteers in the following areas 

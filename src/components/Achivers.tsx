@@ -63,10 +63,10 @@ const topScorers = [
   
   const Achivers = () => {
     return (
-      <div className=" font-popins">
+      <div className=" font-popins overflow-x-hidden py-5 md:py-0">
       <div className="max-w-5xl mx-auto p-4 sm:p-6 lg:p-8">
       <div className=" flex justify-center gap-5">
-      <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
+      <span className=" hidden md:block animate-bounce"><FaStar size={40} color="#d4af37" /></span>
       <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
         <div>
         <h1 className="text-3xl sm:text-2xl lg:text-3xl font-semibold text-center mb-6 text-greenngo font-CormorantUpright">
@@ -77,7 +77,7 @@ const topScorers = [
           
         </div>
         <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
-        <span className=" animate-bounce"><FaStar size={40} color="#d4af37" /></span>
+        <span className=" hidden md:block animate-bounce"><FaStar size={40} color="#d4af37" /></span>
       </div>
         
         
