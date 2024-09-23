@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const DonateSectionUpper = () => {
   return (
-    <div className="w-screen z-50 mb-16">
+    <div className="w-screen z-50 mb-4">
       <div className=" relative  min-h-14 bg-yellow-600 text-white flex justify-center items-center  pl-2 pr-6 ">
         <p className=" text-center">
           Join Our Cause For a Greener and Prosperous India.

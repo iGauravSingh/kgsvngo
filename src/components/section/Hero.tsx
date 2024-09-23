@@ -3,7 +3,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
 const slide1 = "/posters/mustard5.jpg";
-const slide2 = "/posters/bagan.jpg";
+const slide2 = "/posters/bagan8.jpg";
 // const slide3 = "/posters/mustard.jpg";
 
 const images = [
@@ -71,7 +71,7 @@ const Hero = () => {
   };
 
   return (
-    <div className=" w-screen h-[600px] relative overflow-clip bg-white ">
+    <div className=" w-screen h-[550px] relative overflow-clip bg-white ">
       <div className="relative w-screen h-screen overflow-hidden">
         <div className=" w-full flex justify-center items-center">
           {images.map((img, index) => (

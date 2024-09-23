@@ -9,8 +9,8 @@ const PostList = () => {
 
   //&date_gte=${startDate}&date_lte=${endDate}
   const fetchPosts = async () => {
-    // const query = `/posts?category.name=${category}`;
-    const response = await axios.get(`http://localhost:1337/posts?category.name=Agriculture`);
+    const query = `/posts?category.name=${category}`;
+    const response = await axios.get(`http://localhost:1337${query}`);
     setPosts(response.data);
   };
 

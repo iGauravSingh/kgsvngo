@@ -1,12 +1,16 @@
 import Footer from "../../components/Footer"
 import Header from "../../components/Header"
 
+import AuditReport from "/public/credentials/2324/AuditReport.pdf"
+import DirectorReport from "/credentials/2324/DirectorReport.pdf"
+
 const CredentialData = [
-  {id: 1, fr: '2022-2023', dr: 'Director\'s Report 2022-2023', ar: 'Auditor\'s Report 2022-2023'},
-  {id: 2, fr: '2021-2022', dr: 'Director\'s Report 2021-2022', ar: 'Auditor\'s Report 2021-2022'},
-  {id: 3, fr: '2020-2021', dr: 'Director\'s Report 2020-2021', ar: 'Auditor\'s Report 2020-2021'},
-  {id: 4, fr: '2019-2020', dr: 'Director\'s Report 2019-2020', ar: 'Auditor\'s Report 2019-2020'},
-  {id: 5, fr: '2018-2019', dr: 'Director\'s Report 2018-2019', ar: 'Auditor\'s Report 2018-2019'},
+  {id: 6, fr: '2023-2024', dr: 'Director\'s Report 2023-2024', ar: 'Auditor\'s Report 2023-2024', arA: AuditReport, drD: DirectorReport},
+  {id: 1, fr: '2022-2023', dr: 'Director\'s Report 2022-2023', ar: 'Auditor\'s Report 2022-2023', arA: AuditReport, drD: DirectorReport},
+  {id: 2, fr: '2021-2022', dr: 'Director\'s Report 2021-2022', ar: 'Auditor\'s Report 2021-2022', arA: AuditReport, drD: DirectorReport},
+  {id: 3, fr: '2020-2021', dr: 'Director\'s Report 2020-2021', ar: 'Auditor\'s Report 2020-2021', arA: AuditReport, drD: DirectorReport},
+  {id: 4, fr: '2019-2020', dr: 'Director\'s Report 2019-2020', ar: 'Auditor\'s Report 2019-2020', arA: AuditReport, drD: DirectorReport},
+  {id: 5, fr: '2018-2019', dr: 'Director\'s Report 2018-2019', ar: 'Auditor\'s Report 2018-2019', arA: AuditReport, drD: DirectorReport},
 ]
 
 
@@ -52,10 +56,10 @@ const AnnualReports = () => {
                   {item.fr}
               </th>
               <td className="px-6 py-4 cursor-pointer">
-                  {item.dr}
+              <a href = {item.drD} target = "_blank">{item.dr}</a>
               </td>
               <td className="px-6 py-4 cursor-pointer">
-                  {item.ar}
+              <a href = {item.arA} target = "_blank">{item.ar}</a>
               </td>
               
               

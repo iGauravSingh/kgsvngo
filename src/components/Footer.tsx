@@ -5,8 +5,8 @@ import { FaInstagram, FaTwitter } from "react-icons/fa";
 
 const keylinksArray = [
   {title:"Our Approach", link: '/firststeps'},
-  {title: 'Kgsv Plans', link: '/'},
-  {title: 'Finiancials', link: '/annual-reports'},
+  {title: 'KGSV Plans', link: '/'},
+  {title: 'Financials', link: '/annual-reports'},
   {title: 'Wish to Associate', link: '/wish-to-associate'},
   {title: 'Donate', link: '/donate'},
 ]
@@ -14,7 +14,7 @@ const keylinksArray = [
 const aboutKgsv = [
   {title:"What’s KGSV about", link: '/whatkgsvabout'},
   {title: "Who are we", link: '/whoweare'},
-  {title: "Vision & mission", link: '/missionvision'},
+  {title: "Vision & Mission", link: '/missionvision'},
   {title: "Founding Team", link: '/foundingteam'},
   {title: "Remembering Gurudev", link: '/remembering-gurudev'},
   {title: "Gallery", link: '/gallery'},

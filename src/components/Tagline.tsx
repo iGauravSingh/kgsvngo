@@ -7,12 +7,12 @@ const Tagline = () => {
 
         <div className=" w-full h-full absolute top-0 left-0 z-10">
           <img
-            className=" w-full h-full z-10"
-            src="/posters/bannerngo.jpg"
+            className=" w-full h-full z-10 object-cover"
+            src="/posters/bannerngo2.jpg"
             alt="banner"
           />
         </div>
-        <div className=" w-full h-full flex flex-col justify-between items-center text-white pt-9 pb-16 ">
+        <div className=" w-full h-full flex flex-col justify-end items-center gap-20 text-white pt-9 pb-10 mt-2 ">
           <p className=" text-center text-[1.8rem] md:text-[2rem] lg:text-[2.2rem] z-30">
             Dedicated to supporting Rural Communities
           </p>
