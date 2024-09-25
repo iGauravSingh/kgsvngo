@@ -13,7 +13,7 @@ const CurrentYear = () => {
 const startDate = `${currentYear}-01-01`; // Start of the year
 const endDate = `${currentYear}-12-31`; // End of the year
 
-const baseUrl = "https://kgsv-backend-production.up.railway.app";
+// const baseUrl = "https://kgsv-backend-production.up.railway.app";
 
 // Assuming startDate and endDate are defined
 const apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?populate[filters][date][$gte]=${startDate}&populate[filters][date][$lte]=${endDate}&fields[0]=title`;
