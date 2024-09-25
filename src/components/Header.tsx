@@ -174,18 +174,24 @@ const Header = () => {
             <div className=" hidden group-hover:block absolute top-6 z-50">
               <div className=" w-48  bg-white text-black  text-nowrap flex flex-col gap-4 px-2 py-2">
                 <div className=" relative group/submenu">
-                  <div className=" flex justify-between items-center">
-                    <p className=" cursor-pointer">Year 2024</p>
-                    <FaAngleDown size={10} />
+                  <div className=" flex flex-col ">
+                  <p className=" cursor-pointer border-b-2 border-green-100 pb-2">
+                      <Link to="/currentyear">Current Year</Link>
+                    </p>
+                    <p className=" cursor-pointer ">
+                      <Link to="/previousyears">Previous Years</Link>
+                    </p>
+                    
+                    
                   </div>
-                  <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
+                  {/* <div className=" w-52 hidden group-hover/submenu:block absolute top-0 left-32 bg-white space-y-2 py-2 px-2 z-50">
                     <p className=" cursor-pointer border-b-2 border-green-100 pb-2">
                       <Link to="/currentyear">Current Year</Link>
                     </p>
                     <p className=" cursor-pointer ">
                       <Link to="/previousyears">Previous Years</Link>
                     </p>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
