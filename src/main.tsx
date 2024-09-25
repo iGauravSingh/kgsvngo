@@ -34,6 +34,7 @@ import Contactus from './pages/contactus/Contactus.tsx';
 import RememberingGurudev from './pages/aboutus/RememberingGurudev.tsx';
 import AgriculturalDevelopment from './pages/aboutus/ourplans/AgriculturalDevelopment.tsx';
 import AreasOfWork from './pages/aboutus/ourplans/AreasOfWork.tsx';
+import PostDetails from './pages/aboutus/ourplans/PostDetails.tsx';
 
 
 
@@ -54,6 +55,7 @@ const router = createBrowserRouter(
       <Route path='/child-health-nutrition' element={<ChildHealthNutrition />} />
       <Route path='/enviroment-conservation' element={<EnviromentConservation />} />
       <Route path='/women-empowerment' element={<WomenEmpowerment />} />
+      <Route path='/postdetails/:id' element={<PostDetails />} />
 
       <Route path='/foundingteam' element={<FoundingTeam />} />
       <Route path='/associates-mentors' element={<AssociatesMentors />} />
