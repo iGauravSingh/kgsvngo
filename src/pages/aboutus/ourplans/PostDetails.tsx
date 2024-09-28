@@ -63,7 +63,7 @@ const PostDetails = () => {
     <div className=" w-screen min-h-screen">
     <div className=" max-w-3xl mx-auto">
         {/* heading  */}
-        <h1 className=" text-2xl text-center mt-4 font-popins">{postList?.title}</h1>
+        <h1 className=" text-2xl text-center mt-4 font-popins px-5">{postList?.title}</h1>
 
         {/* imageCorosel  */}
         {/* <div className=" mt-6">
@@ -115,7 +115,7 @@ const PostDetails = () => {
 
         {/* post description  */}
         {postList?.description.map((item:any,index:any) => (
-            <p key={index} className=" mt-4">{item.children[0].text}</p>
+            <p key={index} className=" mt-4 px-5 text-justify">{item.children[0].text}</p>
         ))}
     </div>
     </div>
