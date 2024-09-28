@@ -2,6 +2,7 @@
 
 import { Link } from "react-router-dom";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
+import Copyrightsection from "./copyright/Copyrightsection";
 
 const keylinksArray = [
   {title:"Our Approach", link: '/firststeps'},
@@ -22,6 +23,7 @@ const aboutKgsv = [
 
 const Footer = () => {
   return (
+    <>
     <footer className="bg-[#254d42] text-[#d1d5db] p-8 mt-24 pb-12 w-screen">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* About KGSV */}
@@ -88,6 +90,8 @@ const Footer = () => {
         </div>
       </div>
     </footer>
+    <Copyrightsection />
+    </>
   );
 };
 

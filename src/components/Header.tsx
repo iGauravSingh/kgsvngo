@@ -45,7 +45,7 @@ const Header = () => {
       </div>
 
       {/* big menu  */}
-      <div className=" hidden md:block">
+      <div className=" hidden lg:block">
         <div className=" w-screen h-[60px] flex justify-end items-center gap-8 px-[35px] font-Roboto">
           <p className=" cursor-pointer">
             <Link to="/">Home</Link>
@@ -246,7 +246,7 @@ const Header = () => {
       </div>
 
       {/* small menu  */}
-      <div className=" md:hidden flex flex-col items-end">
+      <div className=" lg:hidden flex flex-col items-end">
         <div onClick={handleClick} className=" cursor-pointer">
           <IoMdMenu size={30} color="#254d42" />
         </div>
