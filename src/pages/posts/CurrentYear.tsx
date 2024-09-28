@@ -16,7 +16,7 @@ const endDate = `${currentYear}-12-31`; // End of the year
 // const baseUrl = "https://kgsv-backend-production.up.railway.app";
 
 // Assuming startDate and endDate are defined
-const apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?populate[filters][date][$gte]=${startDate}&populate[filters][date][$lte]=${endDate}&fields[0]=title`;
+const apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$gte]=${startDate}&filters[date][$lte]=${endDate}&sort[0]=date:desc`;
 
 const [postList, setPostList] = useState<any>(null);
   

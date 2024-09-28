@@ -12,6 +12,7 @@ import DonateSection from '../../components/DonateSection'
 // import News from '../../components/News'
 import DonateSectionUpper from '../../components/DonateSectionUpper'
 import Vasudev from '../../components/Vasudev'
+import Copyrightsection from '../../components/copyright/Copyrightsection'
 
 const Homepage = () => {
   return (
@@ -38,6 +39,7 @@ const Homepage = () => {
         <Footer />
         {/* <TestImageText /> */}
         {/* <Glassmorphism /> */}
+        <Copyrightsection />
       </main>
     </div>
     </>

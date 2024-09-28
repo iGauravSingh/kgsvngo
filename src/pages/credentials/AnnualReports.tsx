@@ -6,11 +6,11 @@ import DirectorReport from "/credentials/2324/DirectorReport.pdf"
 
 const CredentialData = [
   {id: 6, fr: '2023-2024', dr: 'Director\'s Report 2023-2024', ar: 'Auditor\'s Report 2023-2024', arA: AuditReport, drD: DirectorReport},
-  {id: 1, fr: '2022-2023', dr: 'Director\'s Report 2022-2023', ar: 'Auditor\'s Report 2022-2023', arA: AuditReport, drD: DirectorReport},
-  {id: 2, fr: '2021-2022', dr: 'Director\'s Report 2021-2022', ar: 'Auditor\'s Report 2021-2022', arA: AuditReport, drD: DirectorReport},
-  {id: 3, fr: '2020-2021', dr: 'Director\'s Report 2020-2021', ar: 'Auditor\'s Report 2020-2021', arA: AuditReport, drD: DirectorReport},
-  {id: 4, fr: '2019-2020', dr: 'Director\'s Report 2019-2020', ar: 'Auditor\'s Report 2019-2020', arA: AuditReport, drD: DirectorReport},
-  {id: 5, fr: '2018-2019', dr: 'Director\'s Report 2018-2019', ar: 'Auditor\'s Report 2018-2019', arA: AuditReport, drD: DirectorReport},
+  {id: 1, fr: '2022-2023', dr: 'Director\'s Report 2022-2023', ar: 'Auditor\'s Report 2022-2023', arA: "/credentials/AuditReport/AuditReport2223.pdf", drD: "/credentials/DirectorReport/DirectorReport2223.pdf"},
+  {id: 2, fr: '2021-2022', dr: 'Director\'s Report 2021-2022', ar: 'Auditor\'s Report 2021-2022', arA: "/credentials/AuditReport/AuditReport2122.pdf", drD: "/credentials/DirectorReport/DirectorReport2122.pdf"},
+  {id: 3, fr: '2020-2021', dr: 'Director\'s Report 2020-2021', ar: 'Auditor\'s Report 2020-2021', arA: "/credentials/AuditReport/AuditReport2021.pdf", drD: "/credentials/DirectorReport/DirectorReport2021.pdf"},
+  {id: 4, fr: '2019-2020', dr: 'Director\'s Report 2019-2020', ar: 'Auditor\'s Report 2019-2020', arA: "/credentials/AuditReport/AuditReport1920.pdf", drD: "/credentials/DirectorReport/DirectorReport1920.pdf"},
+  {id: 5, fr: '2018-2019', dr: 'Director\'s Report 2018-2019', ar: 'Auditor\'s Report 2018-2019', arA: "/credentials/AuditReport/AuditReport1819.pdf", drD: "/credentials/DirectorReport/DirectorReport1819.pdf"},
 ]
 
 

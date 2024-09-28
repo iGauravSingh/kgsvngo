@@ -5,10 +5,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
+// import 'swiper/css';
 
 
 const baseUrl = "https://kgsv-backend-production.up.railway.app";
@@ -19,6 +19,7 @@ const PostDetails = () => {
 
     const [postList, setPostList] = useState<any>(null);
     const [imageArray,setImageArray] = useState<any>([])
+    const [mainImage, setMainImage] = useState<any>(imageArray);
 
     useEffect(() => {
         const fetchData = async () => {
@@ -46,6 +47,7 @@ const PostDetails = () => {
                 postList?.images.data.map((item:any) => {
                     setImageArray((prevstate:any) => [...prevstate,`${baseUrl}${item.attributes.url}`])
                     // imageArray.push(`${baseUrl}${item.attributes.url}`)
+                    setMainImage(imageArray[0])
                 })
             }
         }
@@ -64,7 +66,7 @@ const PostDetails = () => {
         <h1 className=" text-2xl text-center mt-4 font-popins">{postList?.title}</h1>
 
         {/* imageCorosel  */}
-        <div className=" mt-6">
+        {/* <div className=" mt-6">
         <Swiper
       spaceBetween={50}
       slidesPerView={3}
@@ -77,7 +79,35 @@ const PostDetails = () => {
         </SwiperSlide>
       ))}
     </Swiper>
-        </div>
+        </div> */}
+
+<div className="flex flex-col items-center">
+      {/* Main Image */}
+      <div className="mb-4">
+        <img
+          src={mainImage}
+          alt="Main"
+          className=" w-[600] h-[400] object-cover rounded-lg shadow-lg"
+        />
+      </div>
+
+      {/* Thumbnail Images */}
+      <div className="flex space-x-4">
+        {imageArray?.map((image: any, index: any) => (
+          <div
+            key={index}
+            className="cursor-pointer hover:scale-105 transition-transform duration-200"
+            onClick={() => setMainImage(image)}
+          >
+            <img
+              src={image}
+              alt={`Thumbnail ${index}`}
+              className="w-24 h-24 object-cover rounded-md border-2 border-gray-300"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
         
 
         {/* post created date  */}

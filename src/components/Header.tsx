@@ -38,7 +38,7 @@ const Header = () => {
   return (
     <nav>
       <div className="  px-[35px] flex gap-4 items-center overflow-x-clip">
-        <img className=" w-[267px] h-[147px]" src="/posters/logo2.jpg" alt="" />
+        <img className=" w-[90px] h-[60px] md:w-[150px] md:h-[101px] lg:w-[267px] lg:h-[147px]" src="/posters/logo2.jpg" alt="" />
         <h1 className=" font-CormorantUpright text-xl md:text-4xl text-[#222] leading-7 font-[500]">
           Khushhal Gram Samaj Vikas Foundation
         </h1>

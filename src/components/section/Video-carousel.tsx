@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const VideoCarousel = () => {
   return (
-    <div className=" mt-20">
+    <div className=" mt-20 w-screen">
       <motion.div
         variants={{
           active: { opacity: 1, y: 0 },
