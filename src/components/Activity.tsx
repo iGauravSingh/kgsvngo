@@ -4,12 +4,14 @@ import UpcomingEvents from "./events/UpcomingEvents";
 
 const classesData = [
   {id: 1, desc: "CMC Gram Punnapur",mentor: 'Rishi Kumar Gupta',phone: '8707726641', address: "Tehsil Sidhauli, Distt Sitapur-261303"},
-  {id: 2, desc: "CMC Gram Asal",mentor: 'Shalini Vishwakarma',phone: '9569691760', address: "Tehsil Sidhauli, District Sitapur- 261303"},
+  {id: 2, desc: "CMC Gram Asal",mentor: 'Shalini Vishwakarma',phone: '7523806965', address: "Tehsil Sidhauli, District Sitapur- 261303"},
   {id: 3, desc: "PSK - KGSV Centre of Learning , Punnapur",mentor: 'Rishi Kumar Gupta',phone: '8707726641', address: "Tehsil Sidhauli , District Sitapur-261303"},
-  {id: 4, desc: "SVBPK, Kakrighat",mentor: 'Tanuja Bisht',phone: '9569691760', address: " District Almora - 263678 , Uttarakhand "},
+  {id: 4, desc: "SVBPK, Kakrighat",mentor: 'Tanuja Bisht',phone: '6397458981', address: " District Almora - 263678 , Uttarakhand "},
 ]
 
 const upcomingEvents = [
+  {id: 4, desc: "KGSV Annual Quiz", day: "24", month: "November", year: "2024", address: "All Centers"},
+  {id: 3, desc: "KGSV Annual Sports day", day: "14", month: "November", year: "2024", address: "All Centers"},
   {id: 1, desc: "Visit of the Children to Regional Science City", day: "22", month: "May", year: "2024", address: "Lucknow"},
   {id: 2, desc: "Annual Drama Competition", day: "22", month: "May", year: "2024", address: "Lucknow"}
 ]

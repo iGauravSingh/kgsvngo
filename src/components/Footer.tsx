@@ -86,6 +86,7 @@ const Footer = () => {
             <li>Phone: +91-9415752856</li>
             <li>Phone: +91-7704900229</li>
             <li>Email: admin@kgsv.in</li>
+            <li>Email: vikas@kgsv.in</li>
           </ul>
         </div>
       </div>

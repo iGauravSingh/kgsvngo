@@ -242,7 +242,8 @@ const Header = () => {
             <Link to="/contact">Contact us</Link>
           </p>
         </div>
-        <div className=" border border-opacity-5 border-green-950 w-screen"></div>
+        {/* <div className=" border border-opacity-5 border-green-950 w-screen"></div> */}
+        <div className=" border border-green-800 w-screen"></div>
       </div>
 
       {/* small menu  */}
