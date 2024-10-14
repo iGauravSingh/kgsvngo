@@ -78,7 +78,7 @@ const Contactus = () => {
         <div className="bg-white shadow-lg rounded-lg p-6">
           <h2 className="text-xl font-bold mb-4">Contact Details</h2>
           <p className="text-gray-700 mb-2 font-semibold">Khushhal Gram Samaj Vikas Foundation</p>
-          <p className="text-gray-700 mb-2">Email: admin@kgsv.in</p>
+          <p className="text-gray-700 mb-2">Email: vikas@kgsv.in</p>
           <p className="text-gray-700 mb-2">CIN: – U74994UP2019NPL113235</p>
           <p className="text-gray-700 mb-2">Phone: +91-7704900229</p>
           

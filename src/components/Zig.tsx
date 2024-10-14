@@ -108,7 +108,7 @@ const Zig = () => {
       <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright text-nowrap">
       KGSV <span className=" text-xl md:text-3xl">(केजस्वी)</span>
         </h2>
-        <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright mt-2">
+        <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright mt-2 px-1">
           <span>An endeavour to fullfill rural aspirations</span> <span>& create Model villages.</span>
             
         </h2>
