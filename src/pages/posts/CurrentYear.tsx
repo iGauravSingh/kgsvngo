@@ -43,25 +43,45 @@ const [postList, setPostList] = useState<any>(null);
     <>
     <Header />
 
-    <>
-    <div className="relative w-screen min-h-screen lg:pl-14 md:pl-7 pl-5 mt-8">
-        <div className="max-w-xl">
-          {/* Display filtered posts */}
-          <div className="flex flex-col gap-5">
-            {postList?.map((item: any) => (
-              <div key={item.id}>
-                <h3 className="text-2xl font-semibold text-green-950 cursor-pointer">
-                  <Link to={`/postdetails/${item.id}`}>{item.attributes.title}</Link>
-                </h3>
-                <p className="text-gray-500 text-sm">
-                  {item.attributes.date}
-                </p>
+    <div className="w-screen min-h-screen lg:pl-14 md:pl-7  mt-8">
+        <div className=" flex flex-col-reverse lg:flex-row md:justify-between ">
+          <div className=" w-full lg:mx-8">
+            {/* Display filtered posts */}
+            <div className="flex flex-col gap-5 ">
+              <div className=" w-full h-[200px] bg-[#eeeeee] flex justify-start items-center pl-8">
+                <h1 className=" font-CormorantUpright text-4xl text-[#ec1d28] text-center">
+                  Current Year's Activities
+                </h1>
               </div>
-            ))}
+              <div className="flex flex-col gap-5 ">
+                {postList?.map((item: any) => (
+                  <Link to={`/postdetails/${item.id}`}>
+                    <div
+                      key={item.id}
+                      className=" w-full h-full bg-white border-b border-slate-300 pb-6 px-4"
+                    >
+                      <h3 className="text-4xl font-CormorantUpright text-[#3a3a3a]">
+                        {item.attributes.title}{" "}
+                        <span className=" font-Roboto">-</span>{" "}
+                        {item.attributes.date}
+                      </h3>
+                      <p className=" text-[#3a3a3a] text-base font-Roboto mt-5 leading-8 text-justify">
+                        {item.attributes.description?.[0]?.children?.[0]?.text.slice(
+                          0,
+                          300
+                        )}
+                        ...
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
           </div>
+
+          
         </div>
-    </div>
-    </>
+      </div>
 
     <Footer />
     </>

@@ -16,7 +16,7 @@ const Cleanliness = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `${baseUrl}/api/categories/4?fields=name&populate[posts][fields][0]=title&populate[posts][fields][1]=date&populate[posts][sort][0]=date:desc`
+          `${baseUrl}/api/categories/4?fields=name&populate[posts][fields][0]=title&populate[posts][fields][1]=date&populate[posts][fields][2]=description&populate[posts][sort][0]=date:desc`
         );
         // console.log(response.data.data.attributes.posts.data)
         setPostList(response.data.data.attributes.posts.data);
@@ -37,7 +37,7 @@ const Cleanliness = () => {
 
     try {
       const response = await axios.get(
-        `${baseUrl}/api/categories/4?fields=name&populate[posts][filters][date][$gte]=${startDate}&populate[posts][filters][date][$lte]=${endDate}&populate[posts][fields][0]=title&populate[posts][fields][1]=date&populate[posts][sort][0]=date:desc`
+        `${baseUrl}/api/categories/4?fields=name&populate[posts][filters][date][$gte]=${startDate}&populate[posts][filters][date][$lte]=${endDate}&populate[posts][fields][0]=title&populate[posts][fields][1]=date&populate[posts][fields][2]=description&populate[posts][sort][0]=date:desc`
       );
       setPostList(response.data.data.attributes.posts.data);
     } catch (error) {
@@ -49,53 +49,80 @@ const Cleanliness = () => {
     <>
       <Header />
 
-      <>
-        <div className=" w-screen min-h-screen lg:pl-14 md:pl-7 pl-5 mt-8">
-          <div className=" flex flex-col-reverse md:flex-row md:justify-between ">
-            <div className="max-w-xl">
-              {/* Display filtered posts */}
-              <div className="flex flex-col gap-5">
+      <div className="w-screen min-h-screen lg:pl-14 md:pl-7  mt-8">
+        <div className=" flex flex-col-reverse lg:flex-row md:justify-between ">
+          <div className=" w-full lg:mx-8">
+            {/* Display filtered posts */}
+            <div className="flex flex-col gap-5 ">
+              <div className=" w-full h-[200px] bg-[#eeeeee] flex justify-start items-center pl-8">
+                <h1 className=" font-CormorantUpright text-4xl text-[#ec1d28] text-center">
+                  Cleanliness
+                </h1>
+              </div>
+              <div className="flex flex-col gap-5 ">
                 {postList?.map((item: any) => (
-                  <div key={item.id}>
-                    <h3 className="text-2xl font-semibold text-green-950 cursor-pointer">
-                      <Link to={`/postdetails/${item.id}`}>
-                        {item.attributes.title}
-                      </Link>
-                    </h3>
-                    <p className="text-gray-500 text-sm">
-                      {item.attributes.date}
-                    </p>
-                  </div>
+                  <Link key={item.id} to={`/postdetails/${item.id}`}>
+                    <div
+                      key={item.id}
+                      className=" w-full h-full bg-white border-b border-slate-300 pb-6 px-4"
+                    >
+                      <h3 className="text-4xl font-CormorantUpright text-[#3a3a3a]">
+                        {item.attributes.title}{" "}
+                        <span className=" font-Roboto">-</span>{" "}
+                        {item.attributes.date}
+                      </h3>
+                      <p className=" text-[#3a3a3a] text-base font-Roboto mt-5 leading-8 text-justify">
+                        {item.attributes.description?.[0]?.children?.[0]?.text.slice(
+                          0,
+                          300
+                        )}
+                        ...
+                      </p>
+                    </div>
+                  </Link>
                 ))}
               </div>
             </div>
+          </div>
 
-            {/* Time Filter */}
-            <div className="mt-7 mb-10 md:mt-0 md:mr-16">
-              <div className="flex items-center gap-4">
+          {/* Time Filter */}
+          <div className="mt-7 mb-10 md:mt-0 md:mr-16">
+            <div className="flex justify-center items-center gap-6">
+              <div className=" flex flex-col gap-2">
+                <h3 className=" text-center font-sans text-lg font-medium">
+                  From
+                </h3>
                 <input
+                  className=" border border-green-900 px-2 py-1 rounded-sm"
                   type="date"
                   onChange={(e) => setStartDate(e.target.value)}
                   value={startDate}
                 />
+              </div>
+
+              <div className=" flex flex-col gap-2">
+                <h3 className=" text-center font-sans text-lg font-medium">
+                  To
+                </h3>
                 <input
+                  className=" border border-green-900 px-2 py-1 rounded-sm"
                   type="date"
                   onChange={(e) => setEndDate(e.target.value)}
                   value={endDate}
                 />
               </div>
-              <div className="flex justify-center mt-4">
-                <button
-                  onClick={handleSearch}
-                  className="px-3 py-2 bg-green-950 text-slate-100 text-lg"
-                >
-                  Search
-                </button>
-              </div>
+            </div>
+            <div className="flex justify-center mt-4">
+              <button
+                onClick={handleSearch}
+                className="px-3 py-2 bg-green-950 text-slate-100 text-lg"
+              >
+                Search
+              </button>
             </div>
           </div>
         </div>
-      </>
+      </div>
 
       <Footer />
     </>

@@ -12,8 +12,7 @@ const classesData = [
 const upcomingEvents = [
   {id: 4, desc: "KGSV Annual Quiz", day: "24", month: "November", year: "2024", address: "All Centers"},
   {id: 3, desc: "KGSV Annual Sports day", day: "14", month: "November", year: "2024", address: "All Centers"},
-  {id: 1, desc: "Visit of the Children to Regional Science City", day: "22", month: "May", year: "2024", address: "Lucknow"},
-  {id: 2, desc: "Annual Drama Competition", day: "22", month: "May", year: "2024", address: "Lucknow"}
+  
 ]
 
 const Activity = () => {

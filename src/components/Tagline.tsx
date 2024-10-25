@@ -24,9 +24,9 @@ const Tagline = () => {
         const response = await axios.get(
           `${apiurl}`
         );
-        console.log(response.data.data[0])
-        setPostList(response.data.data[0].attributes);
-        setIdd(response.data.data[0].id)
+        console.log(response?.data.data[0])
+        setPostList(response?.data.data[0].attributes);
+        setIdd(response?.data.data[0].id)
       } catch (error) {
         console.error("Error fetching initial posts:", error);
       }
@@ -62,11 +62,26 @@ const Tagline = () => {
       
       <div className=" relative w-screen md:w-[50%] h-[250px]  overflow-clip">
       
-        <img
+        {/* <img
           className=" w-full h-full object-cover"
           src={`${baseUrl}${postList?.images.data[0].attributes.url}`}
           alt=""
-        />
+        /> */}
+
+{postList?.images?.data?.[0] ? (
+    <img
+      className="w-full h-full object-cover"
+      src={`${baseUrl}${postList.images.data[0].attributes.url}`}
+      alt="post image"
+    />
+  ) : (
+    // Placeholder image if there's no image available
+    <img
+      className="w-full h-full object-cover object-top"
+      src="/img/eleven.jpg"
+      alt="post image"
+    />
+  )}
         
         {/* <Link to={`/postdetails/${postList.id}`}></Link> */}
         <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-t from-gray-900 via-gray-900/10 z-50">
