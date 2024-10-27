@@ -103,12 +103,12 @@ const Zig = () => {
 
   return (
     <div className=" pb-7 font-popins flex justify-center overflow-x-hidden ">
-      <div className="  mx-8 my-8">
+      <div className="  mx-8 my-8 flex flex-col items-center">
       
       <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright text-nowrap">
       KGSV <span className=" text-xl md:text-3xl">(केजस्वी)</span>
         </h2>
-        <h2 className=" text-center text-2xl md:text-4xl text-greenngo font-CormorantUpright mt-2 px-1">
+        <h2 className=" overflow-x-hidden text-center text-xl md:text-4xl text-greenngo font-CormorantUpright mt-2 px-2">
           <span>An endeavour to fullfill rural aspirations</span> <span>& create Model villages.</span>
             
         </h2>
@@ -127,9 +127,9 @@ const Zig = () => {
               <div className=" mt-5 max-w-[600px] ">
 
                 {/* Qoutes  */}
-                <div className=" hidden md:block opacity-50"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
-                <div className=" hidden md:block  ">
-                  <p className=" px-2 font-DancingScript text-3xl text-ngodark font-semibold">
+                <div className=" px-5  opacity-50 overflow-x-hidden"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
+                <div className="    ">
+                  <p className=" overflow-x-hidden px-5 font-DancingScript text-3xl text-center text-ngodark font-semibold">
                     {item.qoutes}
                   </p>
                 </div>
