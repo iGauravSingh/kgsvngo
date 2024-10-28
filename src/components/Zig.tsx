@@ -140,7 +140,7 @@ const Zig = () => {
                   whileInView="show"
                   className="    mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
                 >
-                  <p className=" text-justify text-sm md:text-base px-1 sm:px-0">{item.text}</p>
+                  <p className=" text-justify text-sm md:text-base px-1 sm:px-0 px-4">{item.text}</p>
                 </motion.div>
               </div>
               
@@ -180,9 +180,10 @@ const Zig = () => {
               <div className=" mt-5 max-w-[600px] ">
 
                 {/* Qoutes  */}
-                <div className=" hidden md:block opacity-50"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
-                <div className=" hidden md:block  ">
-                  <p className=" px-2 font-DancingScript text-3xl text-ngodark font-semibold">
+                {/* Qoutes  */}
+                <div className=" px-5  opacity-50 overflow-x-hidden"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
+                <div className="    ">
+                  <p className=" overflow-x-hidden px-5 font-DancingScript text-3xl text-center text-ngodark font-semibold">
                     {item.qoutes}
                   </p>
                 </div>
@@ -193,7 +194,7 @@ const Zig = () => {
                   whileInView="show"
                   className="    mt-12 bg-white/30 backdrop-blur-lg shadow-lg  px-4 py-4 rounded-xl"
                 >
-                  <p className=" text-justify text-sm md:text-base px-1 sm:px-0">{item.text}</p>
+                  <p className=" text-justify text-sm md:text-base px-1 sm:px-0 px-4">{item.text}</p>
                 </motion.div>
               </div>
               

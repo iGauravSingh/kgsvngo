@@ -17,7 +17,7 @@ import Vasudev from '../../components/Vasudev'
 const Homepage = () => {
   return (
     <>
-    <div className=" font-popins">
+    <div className=" font-popins overflow-clip">
       <Header />
       <main className="">
         <div className="z-10">
