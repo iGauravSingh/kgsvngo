@@ -145,7 +145,7 @@ const PostList = () => {
           {/* Image on top with text */}
           <div className="relative w-full h-64 mt-2">
             <img
-              src="/originalpagesimages/firstlittlesteps.jpg"
+              src="/ourPlanStatic/enviroment.jpg"
               alt="Top Image"
               className="object-cover w-full h-full"
             />
