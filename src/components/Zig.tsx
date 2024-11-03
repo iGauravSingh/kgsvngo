@@ -184,7 +184,7 @@ const Zig = () => {
                 <div className=" px-5  opacity-50 overflow-x-hidden"><RiDoubleQuotesL size={70} color="#176e3b" /></div>
                 <div className="    ">
                   <p className=" overflow-x-hidden px-5 font-DancingScript text-3xl text-center text-ngodark font-semibold">
-                    {item.qoutes}
+                    {item.qoutes} - KGSV
                   </p>
                 </div>
                 {/* text on right  */}

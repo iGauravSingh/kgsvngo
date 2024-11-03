@@ -32,7 +32,7 @@ const Donate = () => {
           <div className=" relative md:mb-4">
             <div className=" flex flex-col md:flex-row justify-center  gap-12">
             <h2 className="text-2xl font-bold md:mb-4 text-center leading-9 tracking-wide">
-              Support Our Cause
+              Support the Cause
             </h2>
             
             <button className=" hidden md:block absolute right-16 px-5 py-3 bg-greenngo text-slate-50 text-lg rounded-lg hover:bg-greenngo">
