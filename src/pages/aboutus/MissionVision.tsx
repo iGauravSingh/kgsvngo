@@ -12,7 +12,12 @@ const MissionVision = () => {
         <img
           src="/originalpagesimages/visionmission-1.jpg"
           alt="Top Image"
-          className="object-cover w-full h-full"
+          className=" hidden md:block object-cover w-full h-full"
+        />
+        <img
+          src="/originalpagesimages/visionmission-2.jpg"
+          alt="Top Image"
+          className=" md:hidden object-cover w-full h-full"
         />
         <div className="absolute inset-0 flex items-center justify-center">
           {/* <span className="text-white text-4xl font-bold font-CormorantUpright">Mission And Vision</span> */}
