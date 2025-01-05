@@ -31,8 +31,19 @@ const PreviousYears = () => {
     const fetchData = async () => {
       try {
         const currentYear = new Date().getFullYear();
-const startOfYear = `${currentYear}-04-01`;
-const queryUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$lt]=${startOfYear}&sort[0]=date:desc`;
+        const currentMonth = new Date().getMonth();
+        let queryUrl = '';
+
+        // console.log('....prev',currentMonth)
+        if(currentMonth < 3){
+          const startOfYear = `${currentYear-1}-04-01`;
+ queryUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$lt]=${startOfYear}&sort[0]=date:desc`;
+        } else {
+          const startOfYear = `${currentYear}-04-01`;
+ queryUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$lt]=${startOfYear}&sort[0]=date:desc`;
+        }
+
+
         const response = await axios.get(queryUrl);
         // console.log(response)
         // console.log(response.data.data)

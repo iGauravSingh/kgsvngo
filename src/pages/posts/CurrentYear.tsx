@@ -10,13 +10,29 @@ import Footer from "../../components/Footer";
 const CurrentYear = () => {
 
   const currentYear = new Date().getFullYear();
-const startDate = `${currentYear}-04-01`; // Start of the year
-const endDate = `${currentYear-1}-12-31`; // End of the year
+
+  const currentMonth = new Date().getMonth();
+        let apiUrl = '';
+
+
+
+
+if(currentMonth < 3){
+  const startDate = `${currentYear-1}-04-01`; // Start of the year
+const endDate = `${currentYear}-03-31`; // End of the year
+  apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$gte]=${startDate}&filters[date][$lte]=${endDate}&sort[0]=date:desc`;
+
+} else {
+  const startDate = `${currentYear}-04-01`; // Start of the year
+const endDate = `${currentYear + 1}-03-31`; // End of the year
+  apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$gte]=${startDate}&filters[date][$lte]=${endDate}&sort[0]=date:desc`;
+
+}
 
 // const baseUrl = "https://kgsv-backend-production.up.railway.app";
 
 // Assuming startDate and endDate are defined
-const apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$gte]=${startDate}&filters[date][$lte]=${endDate}&sort[0]=date:desc`;
+// const apiUrl = `https://kgsv-backend-production.up.railway.app/api/posts?filters[date][$gte]=${endDate}&filters[date][$lte]=${startDate}&sort[0]=date:desc`;
 
 const [postList, setPostList] = useState<any>(null);
   
@@ -55,7 +71,7 @@ const [postList, setPostList] = useState<any>(null);
               </div>
               <div className="flex flex-col gap-5 ">
                 {postList?.map((item: any) => (
-                  <Link to={`/postdetails/${item.id}`}>
+                  <Link to={`/postdetails/${item.id}`} key={item.id}>
                     <div
                       key={item.id}
                       className=" w-full h-full bg-white border-b border-slate-300 pb-6 px-4"
