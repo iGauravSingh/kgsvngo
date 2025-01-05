@@ -10,8 +10,8 @@ import Footer from "../../components/Footer";
 const CurrentYear = () => {
 
   const currentYear = new Date().getFullYear();
-const startDate = `${currentYear}-01-01`; // Start of the year
-const endDate = `${currentYear}-12-31`; // End of the year
+const startDate = `${currentYear}-04-01`; // Start of the year
+const endDate = `${currentYear-1}-12-31`; // End of the year
 
 // const baseUrl = "https://kgsv-backend-production.up.railway.app";
 
